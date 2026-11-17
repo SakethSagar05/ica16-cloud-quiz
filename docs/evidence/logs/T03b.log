@@ -1,0 +1,4 @@
+11-16 21:29:26.962 I/flutter (26687): [ICA16] 2026-11-17T02:29:26.962639Z app started build=d47f396 devTools=true
+11-16 21:29:26.963 I/flutter (26687): [ICA16] 2026-11-17T02:29:26.963711Z uid=..MPV1X2 round=..- signedOut -> home (authenticated)
+11-16 21:29:45.583 I/flutter (26687): [ICA16] 2026-11-17T02:29:45.583823Z uid=..MPV1X2 round=..x8k6gv home -> loading (GET opentdb amount=10 category=9 difficulty=easy type=multiple)
+11-16 21:29:45.583 I/flutter (26687): [ICA16] 2026-11-17T02:29:45.583987Z uid=..MPV1X2 round=..x8k6gv loading -> requestError [INJECTED] (kind=malformedJson)

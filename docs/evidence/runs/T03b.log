@@ -1,20 +1,37 @@
-# scenario T03b started 2026-11-17T02:27:48Z device=emulator-5554 commit=d47f396
-[02:27:48Z] clearlogs
-[02:27:48Z] restart
+# scenario T03b started 2026-11-17T02:29:25Z device=emulator-5554 commit=5ca0448
+[02:29:25Z] clearlogs
+[02:29:25Z] restart
     app restarted
-[02:27:53Z] signin a
+[02:29:30Z] signin a
     already signed in as test user a (UID ..MPV1X2)
-[02:27:55Z] tap Fault lab
-    could not find "Fault lab" on screen
-    STOPPED: this step failed
-    saved docs/evidence/screens/FAIL_T03b.png
-    | Home
+[02:29:32Z] tap Fault lab
+    tapped "Fault lab" at 955,242 (taps: 1)
+[02:29:35Z] tap Inject bad JSON
+    tapped "Inject bad JSON" at 350,1579 (taps: 1)
+[02:29:38Z] expect Armed: badJson
+    PASS: screen shows "Armed: badJson"
+[02:29:40Z] back
+[02:29:41Z] waitfor 20 Start round
+    PASS: "Start round" appeared
+[02:29:44Z] tap Start round
+    tapped "Start round" at 720,1474 (taps: 1)
+[02:29:47Z] waitfor 6 Retry allowed in
+    PASS: "Retry allowed in" appeared
+[02:29:50Z] shot T03_6_retry_rate_limited
+    saved docs/evidence/screens/T03_6_retry_rate_limited.png
+[02:29:50Z] texts
+    | Quiz
+    | Fault lab
     | Sign out
-    | Signed in ica16.user.a.ecc31f@example.com UID ..MPV1X2
-    | Show full IDs
-    | General Knowledge
-    | 10 easy multiple-choice questions. One answer each.
-    | Start round
-    | My cloud attempts
-    | Build d47f396, release
-# scenario T03b finished 2026-11-17T02:28:32Z result=STOPPED
+    | Questions could not be loaded INJECTED FAULT (development only) The question service sent data that is not valid JSON. No round was started.
+    | Retry now
+    | Back to home
+[02:29:53Z] waitfor 15 Retry now
+    PASS: "Retry now" appeared
+[02:29:55Z] shot T03_7_retry_available_after_5s
+    saved docs/evidence/screens/T03_7_retry_available_after_5s.png
+[02:29:55Z] expectnot Question 1 of 10
+    PASS: screen does not show "Question 1 of 10"
+[02:29:57Z] logs T03b
+    saved docs/evidence/logs/T03b.log (4 lines)
+# scenario T03b finished 2026-11-17T02:29:57Z result=COMPLETED
