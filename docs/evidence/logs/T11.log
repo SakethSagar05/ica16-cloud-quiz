@@ -1,0 +1,7 @@
+11-16 21:22:36.547 I/flutter (23817): [ICA16] 2026-11-17T02:22:36.547717Z app started build=d47f396 devTools=true
+11-16 21:22:36.548 I/flutter (23817): [ICA16] 2026-11-17T02:22:36.548388Z uid=..bKg4f1 round=..- signedOut -> home (authenticated)
+11-16 21:22:40.559 I/flutter (23817): [ICA16] 2026-11-17T02:22:40.559729Z uid=..- round=..- home -> signedOut (no user)
+11-16 21:23:00.820 I/flutter (23817): [ICA16] 2026-11-17T02:23:00.820508Z uid=..MPV1X2 round=..- signedOut -> home (authenticated)
+11-16 21:23:17.894 I/flutter (23817): [ICA16] 2026-11-17T02:23:17.894411Z probe T11 create with correctCount 11: DENIED as expected (rejected with permission-denied)
+11-16 21:23:17.894 I/flutter (23817): [ICA16] 2026-11-17T02:23:17.894462Z probe T11 create with an extra field: DENIED as expected (rejected with permission-denied)
+11-16 21:23:17.894 I/flutter (23817): [ICA16] 2026-11-17T02:23:17.894526Z probe T11 update existing attempt ..ffk9eW: DENIED as expected (rejected with permission-denied; server copy unchanged: correctCount=3 submittedAt=2026-11-17T02:21:41.816Z)

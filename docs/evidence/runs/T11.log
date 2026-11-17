@@ -1,0 +1,50 @@
+# scenario T11 started 2026-11-17T02:22:33Z device=emulator-5554 commit=d47f396
+[02:22:33Z] clearlogs
+[02:22:34Z] restart
+    app restarted
+[02:22:38Z] signin a
+    tapped "Sign out" at 1280,242 (taps: 1)
+    tapped "Email" at 720,886 (taps: 1)
+    tapped "Password" at 720,1145 (taps: 1)
+    tapped "Sign in" at 720,1394 (taps: 1)
+    typed the email and password of test user a (values not logged)
+    PASS: signed in as test user a (UID ..MPV1X2)
+[02:23:03Z] tap Fault lab
+    tapped "Fault lab" at 955,242 (taps: 1)
+[02:23:06Z] tap Run T11 probes
+    tapped "Run T11 probes" at 720,1951 (taps: 1)
+[02:23:17Z] waitfor 90 T11 create with correctCount 11
+    PASS: "T11 create with correctCount 11" appeared
+[02:23:22Z] sleep 3
+[02:23:25Z] shot T11_1_probe_results
+    saved docs/evidence/screens/T11_1_probe_results.png
+[02:23:26Z] texts
+    | Back
+    | Fault lab (development)
+    | Development only Each fault fires once on the next request and is labelled as injected wherever it appears.
+    | Signed in as UID ..MPV1X2
+    | Probe results (newest first)
+    | DENIED: T11 create with correctCount 11 rejected with permission-denied
+    | DENIED: T11 create with an extra field rejected with permission-denied
+    | DENIED: T11 update existing attempt ..ffk9eW rejected with permission-denied; server copy unchanged: correctCount=3 submittedAt=2026-11-17T02:21:41.816Z
+    | Next question request (T03) Armed: none Next score save (T09, T12) Armed: none
+[02:23:28Z] scroll down
+[02:23:30Z] shot T11_2_probe_results_more
+    saved docs/evidence/screens/T11_2_probe_results_more.png
+[02:23:30Z] texts
+    | Back
+    | Fault lab (development)
+    | DENIED: T11 create with an extra field rejected with permission-denied
+    | DENIED: T11 update existing attempt ..ffk9eW rejected with permission-denied; server copy unchanged: correctCount=3 submittedAt=2026-11-17T02:21:41.816Z
+    | Next question request (T03) Armed: none Next score save (T09, T12) Armed: none
+    | No question fault
+    | Inject bad JSON
+    | Inject API code 1
+    | Inject nine results
+    | No save fault
+    | Inject lost acknowledgement
+    | Inject unavailable
+    | Inject resource-exhausted
+[02:23:33Z] logs T11
+    saved docs/evidence/logs/T11.log (7 lines)
+# scenario T11 finished 2026-11-17T02:23:33Z result=COMPLETED

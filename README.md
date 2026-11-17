@@ -76,6 +76,8 @@ flutter run
 
 On my Mac, `Start ICA16.command` does steps 2, 4 and 5 from the command line after asking for permission: it creates the database with `firebase firestore:databases:create "(default)" --location=nam5 --edition=standard`, creates two throwaway test users through the Firebase Authentication sign-up endpoint, and deploys the rules. The test passwords are generated on the machine and kept in `tools/.relay/`, which is git-ignored.
 
+On the first run `firebase firestore:databases:create` failed with HTTP 403 because the Cloud Firestore API was still disabled in the project. `firebase deploy --only firestore:rules` turned the API on and created the `(default)` database; `firebase firestore:databases:get "(default)"` then reported `FIRESTORE_NATIVE`, `STANDARD`, `nam5` (saved in `docs/evidence/firestore_database_info.txt`).
+
 ### Builds
 
 ```bash
@@ -105,7 +107,11 @@ flutter test
 
 `test/question_parsing_test.dart` covers the response validation. `test/quiz_controller_test.dart` covers the state machine with fake services: one answer per question, replay reset, single write on double tap, lost acknowledgement recovery, timeout is unknown rather than failed, distinct denied/unavailable/exhausted errors, verification failure is not a save failure, collision, and the stale-user guard.
 
-The device tests T01-T12 are scripted in `tools/scenarios/` and run against the deployed Firebase project. Their run logs, screenshots and app logs are in `docs/evidence/`.
+The device tests T01-T12 are scripted in `tools/scenarios/` and run against the deployed Firebase project. `T03b` adds a screenshot of the 5-second retry lock, and `release_check` installs the submission APK and saves one attempt with it. Their run logs, screenshots and app logs are in `docs/evidence/`.
+
+## Locating the saved records (T07)
+
+Firebase project `ica13-auth`, Firestore `(default)` database: `users/..MPV1X2/attempts/..nUtqAh` is the attempt saved in T06 and read back after the restart in T07 (test user A; IDs shortened here). `docs/evidence/cloud_rest_listing.txt` lists every attempt of test user A with its create and update times, read over the Firestore REST API outside the app. The full UIDs and the test-user sign-ins are shared with the grader only through the instructor-approved private channel.
 
 ## Security notes
 

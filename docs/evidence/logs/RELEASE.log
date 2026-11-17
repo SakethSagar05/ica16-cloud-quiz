@@ -1,0 +1,19 @@
+11-16 21:26:16.164 I/flutter (25512): [ICA16] 2026-11-17T02:26:16.164719Z app started build=d47f396 devTools=false
+11-16 21:26:16.165 I/flutter (25512): [ICA16] 2026-11-17T02:26:16.165747Z uid=..MPV1X2 round=..- signedOut -> home (authenticated)
+11-16 21:26:25.240 I/flutter (25512): [ICA16] 2026-11-17T02:26:25.240027Z uid=..MPV1X2 round=..lXoPIT home -> loading (GET opentdb amount=10 category=9 difficulty=easy type=multiple)
+11-16 21:26:26.490 I/flutter (25512): [ICA16] 2026-11-17T02:26:26.490952Z uid=..MPV1X2 round=..lXoPIT loading -> playing (validated 10 questions)
+11-16 21:26:30.803 I/flutter (25512): [ICA16] 2026-11-17T02:26:30.803327Z uid=..MPV1X2 round=..lXoPIT answered question 1: incorrect, score=0
+11-16 21:26:37.526 I/flutter (25512): [ICA16] 2026-11-17T02:26:37.526860Z uid=..MPV1X2 round=..lXoPIT answered question 2: incorrect, score=0
+11-16 21:26:44.261 I/flutter (25512): [ICA16] 2026-11-17T02:26:44.261359Z uid=..MPV1X2 round=..lXoPIT answered question 3: incorrect, score=0
+11-16 21:26:51.007 I/flutter (25512): [ICA16] 2026-11-17T02:26:51.007331Z uid=..MPV1X2 round=..lXoPIT answered question 4: incorrect, score=0
+11-16 21:26:57.809 I/flutter (25512): [ICA16] 2026-11-17T02:26:57.809761Z uid=..MPV1X2 round=..lXoPIT answered question 5: correct, score=1
+11-16 21:27:04.499 I/flutter (25512): [ICA16] 2026-11-17T02:27:04.499193Z uid=..MPV1X2 round=..lXoPIT answered question 6: incorrect, score=1
+11-16 21:27:11.223 I/flutter (25512): [ICA16] 2026-11-17T02:27:11.223377Z uid=..MPV1X2 round=..lXoPIT answered question 7: correct, score=2
+11-16 21:27:17.906 I/flutter (25512): [ICA16] 2026-11-17T02:27:17.906534Z uid=..MPV1X2 round=..lXoPIT answered question 8: incorrect, score=2
+11-16 21:27:24.603 I/flutter (25512): [ICA16] 2026-11-17T02:27:24.603159Z uid=..MPV1X2 round=..lXoPIT answered question 9: incorrect, score=2
+11-16 21:27:31.235 I/flutter (25512): [ICA16] 2026-11-17T02:27:31.235446Z uid=..MPV1X2 round=..lXoPIT answered question 10: correct, score=3
+11-16 21:27:34.581 I/flutter (25512): [ICA16] 2026-11-17T02:27:34.581463Z uid=..MPV1X2 round=..lXoPIT playing -> readyToSubmit (payload frozen correctCount=3)
+11-16 21:27:39.856 I/flutter (25512): [ICA16] 2026-11-17T02:27:39.856107Z uid=..MPV1X2 round=..lXoPIT readyToSubmit -> submitting (create-once transaction started)
+11-16 21:27:41.505 I/flutter (25512): [ICA16] 2026-11-17T02:27:41.505523Z uid=..MPV1X2 round=..lXoPIT transaction finished: created
+11-16 21:27:41.505 I/flutter (25512): [ICA16] 2026-11-17T02:27:41.505580Z uid=..MPV1X2 round=..lXoPIT submitting -> verifying (server-only read)
+11-16 21:27:41.768 I/flutter (25512): [ICA16] 2026-11-17T02:27:41.768698Z uid=..MPV1X2 round=..lXoPIT verifying -> cloudVerified (verified correctCount=3 submittedAt=2026-11-17T02:27:42.010Z fromCache=false pendingWrites=false)

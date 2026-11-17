@@ -1,0 +1,17 @@
+11-16 21:10:14.599 I/flutter (18056): [ICA16] 2026-11-17T02:10:14.599200Z app started build=d47f396 devTools=true
+11-16 21:10:14.599 I/flutter (18056): [ICA16] 2026-11-17T02:10:14.599763Z uid=..MPV1X2 round=..- signedOut -> home (authenticated)
+11-16 21:10:23.312 I/flutter (18056): [ICA16] 2026-11-17T02:10:23.312147Z uid=..MPV1X2 round=..5LPekT home -> loading (GET opentdb amount=10 category=9 difficulty=easy type=multiple)
+11-16 21:10:27.558 I/flutter (18056): [ICA16] 2026-11-17T02:10:27.558845Z uid=..MPV1X2 round=..5LPekT loading -> playing (validated 10 questions)
+11-16 21:10:34.265 I/flutter (18056): [ICA16] 2026-11-17T02:10:34.265601Z uid=..MPV1X2 round=..5LPekT answered question 1: incorrect, score=0
+11-16 21:10:41.027 I/flutter (18056): [ICA16] 2026-11-17T02:10:41.026981Z uid=..MPV1X2 round=..5LPekT answered question 2: incorrect, score=0
+11-16 21:10:47.761 I/flutter (18056): [ICA16] 2026-11-17T02:10:47.761348Z uid=..MPV1X2 round=..5LPekT answered question 3: correct, score=1
+11-16 21:10:54.492 I/flutter (18056): [ICA16] 2026-11-17T02:10:54.492677Z uid=..MPV1X2 round=..5LPekT answered question 4: incorrect, score=1
+11-16 21:11:01.182 I/flutter (18056): [ICA16] 2026-11-17T02:11:01.182321Z uid=..MPV1X2 round=..5LPekT answered question 5: incorrect, score=1
+11-16 21:11:07.892 I/flutter (18056): [ICA16] 2026-11-17T02:11:07.892342Z uid=..MPV1X2 round=..5LPekT answered question 6: incorrect, score=1
+11-16 21:11:14.630 I/flutter (18056): [ICA16] 2026-11-17T02:11:14.630569Z uid=..MPV1X2 round=..5LPekT answered question 7: incorrect, score=1
+11-16 21:11:21.357 I/flutter (18056): [ICA16] 2026-11-17T02:11:21.357675Z uid=..MPV1X2 round=..5LPekT answered question 8: correct, score=2
+11-16 21:11:28.081 I/flutter (18056): [ICA16] 2026-11-17T02:11:28.081146Z uid=..MPV1X2 round=..5LPekT answered question 9: incorrect, score=2
+11-16 21:11:34.807 I/flutter (18056): [ICA16] 2026-11-17T02:11:34.807133Z uid=..MPV1X2 round=..5LPekT answered question 10: incorrect, score=2
+11-16 21:11:38.143 I/flutter (18056): [ICA16] 2026-11-17T02:11:38.143019Z uid=..MPV1X2 round=..5LPekT playing -> readyToSubmit (payload frozen correctCount=2)
+11-16 21:12:07.940 I/flutter (18056): [ICA16] 2026-11-17T02:12:07.940438Z uid=..MPV1X2 round=..BkeY72 readyToSubmit -> loading (GET opentdb amount=10 category=9 difficulty=easy type=multiple)
+11-16 21:12:12.385 I/flutter (18056): [ICA16] 2026-11-17T02:12:12.385322Z uid=..MPV1X2 round=..BkeY72 loading -> playing (validated 10 questions)

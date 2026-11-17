@@ -1,0 +1,45 @@
+# scenario T02 started 2026-11-17T02:05:59Z device=emulator-5554 commit=d47f396
+[02:05:59Z] clearlogs
+[02:05:59Z] restart
+    app restarted
+[02:06:03Z] signin a
+    already signed in as test user a (UID ..MPV1X2)
+[02:06:06Z] waitfor 20 Start round
+    PASS: "Start round" appeared
+[02:06:08Z] tap Start round
+    tapped "Start round" at 720,1474 (taps: 1)
+[02:06:11Z] waitfor 45 Question 1 of 10
+    PASS: "Question 1 of 10" appeared
+[02:06:17Z] shot T02_1_first_question
+    saved docs/evidence/screens/T02_1_first_question.png
+[02:06:18Z] texts
+    | Quiz
+    | Fault lab
+    | Sign out
+    | Question 1 of 10 Score: 0
+    | 0
+    | Round ..vtVcgS
+    | Gouda cheese is from which European country?
+    | Choice 1: The Netherlands
+    | Choice 2: Belgium
+    | Choice 3: France
+    | Choice 4: Germany
+    | Choose one answer Your first tap is final for this question.
+    | Next question
+[02:06:20Z] expect Choice 4:
+    PASS: screen shows "Choice 4:"
+[02:06:22Z] expectnot Choice 5:
+    PASS: screen does not show "Choice 5:"
+[02:06:24Z] logs T02
+    saved docs/evidence/logs/T02.log (4 lines)
+[02:06:25Z] sleep 6
+[02:06:31Z] apicheck
+checked_at_utc: 2026-11-17T02:06:31.335997+00:00
+url: https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple
+response_code: 0
+results: 10
+categories: ['General Knowledge']
+difficulties: ['easy']
+types: ['multiple']
+incorrect_answers per question: [3]
+# scenario T02 finished 2026-11-17T02:06:31Z result=COMPLETED

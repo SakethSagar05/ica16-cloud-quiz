@@ -1,0 +1,93 @@
+# scenario T10 started 2026-11-17T02:20:13Z device=emulator-5554 commit=d47f396
+[02:20:13Z] clearlogs
+[02:20:13Z] restart
+    app restarted
+[02:20:18Z] signin a
+    already signed in as test user a (UID ..MPV1X2)
+[02:20:20Z] waitfor 20 Start round
+    PASS: "Start round" appeared
+[02:20:23Z] tap Start round
+    tapped "Start round" at 720,1474 (taps: 1)
+[02:20:26Z] waitfor 45 Question 1 of 10
+    PASS: "Question 1 of 10" appeared
+[02:20:28Z] playround
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2692 (taps: 1)
+    tapped "Choice 1:" at 720,963 (taps: 1)
+    tapped "Next question" at 720,2486 (taps: 1)
+    tapped "Choice 1:" at 720,1187 (taps: 1)
+    tapped "Next question" at 720,2710 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2395 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2395 (taps: 1)
+    tapped "Choice 1:" at 720,963 (taps: 1)
+    tapped "Next question" at 720,2486 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "See results" at 720,2395 (taps: 1)
+    round finished
+[02:21:37Z] tap Submit score to cloud
+    tapped "Submit score to cloud" at 720,1205 (taps: 1)
+[02:21:41Z] waitfor 45 Cloud verified
+    PASS: "Cloud verified" appeared
+[02:21:44Z] shot T10_1_user_a_attempt
+    saved docs/evidence/screens/T10_1_user_a_attempt.png
+[02:21:44Z] texts
+    | Results
+    | Fault lab
+    | Sign out
+    | Final score: 3 / 10
+    | Round ..ffk9eW
+    | Cloud verified The server returned this attempt with its own timestamp.
+    | Play again
+    | My cloud attempts
+    | Back to home
+    | Path: users/..MPV1X2/attempts/..ffk9eW
+    | Document read from the server schemaVersion: 1 variant: A categoryId: 9 questionCount: 10 correctCount: 3 submittedAt: 2026-11-17T02:21:41.816Z Read source: server, pending writes: none
+    | Review of all 10 answers
+[02:21:46Z] tap Sign out
+    tapped "Sign out" at 1280,242 (taps: 1)
+[02:21:49Z] wait Sign in to play
+    PASS: "Sign in to play" appeared
+[02:21:52Z] signin b
+    tapped "Email" at 720,886 (taps: 1)
+    tapped "Password" at 720,1145 (taps: 1)
+    tapped "Sign in" at 720,1394 (taps: 1)
+    typed the email and password of test user b (values not logged)
+    PASS: signed in as test user b (UID ..bKg4f1)
+[02:22:13Z] expectuid b
+    PASS: UID on screen ends in bKg4f1, the UID Firebase issued for test user b
+[02:22:15Z] shot T10_2_signed_in_as_b
+    saved docs/evidence/screens/T10_2_signed_in_as_b.png
+[02:22:16Z] tap Fault lab
+    tapped "Fault lab" at 955,242 (taps: 1)
+[02:22:20Z] expect T10 target from this session
+    PASS: screen shows "T10 target from this session"
+[02:22:22Z] tap Run T10 probes
+    tapped "Run T10 probes" at 720,2245 (taps: 1)
+[02:22:29Z] waitfor 60 T10 write into
+    PASS: "T10 write into" appeared
+[02:22:31Z] shot T10_3_probe_results
+    saved docs/evidence/screens/T10_3_probe_results.png
+[02:22:31Z] texts
+    | Back
+    | Fault lab (development)
+    | Development only Each fault fires once on the next request and is labelled as injected wherever it appears.
+    | Signed in as UID ..bKg4f1
+    | Probe results (newest first)
+    | DENIED: T10 read users/..MPV1X2/attempts/..ffk9eW rejected with permission-denied
+    | DENIED: T10 write into users/..MPV1X2/attempts rejected with permission-denied
+    | Next question request (T03) Armed: none Next score save (T09, T12) Armed: none
+    | No question fault
+    | Inject bad JSON
+    | Inject API code 1
+    | Inject nine results
+[02:22:33Z] logs T10
+    saved docs/evidence/logs/T10.log (23 lines)
+# scenario T10 finished 2026-11-17T02:22:33Z result=COMPLETED

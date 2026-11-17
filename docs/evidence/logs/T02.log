@@ -1,0 +1,4 @@
+11-16 21:06:01.649 I/flutter (16053): [ICA16] 2026-11-17T02:06:01.649341Z app started build=d47f396 devTools=true
+11-16 21:06:01.650 I/flutter (16053): [ICA16] 2026-11-17T02:06:01.650217Z uid=..MPV1X2 round=..- signedOut -> home (authenticated)
+11-16 21:06:10.255 I/flutter (16053): [ICA16] 2026-11-17T02:06:10.255772Z uid=..MPV1X2 round=..vtVcgS home -> loading (GET opentdb amount=10 category=9 difficulty=easy type=multiple)
+11-16 21:06:14.784 I/flutter (16053): [ICA16] 2026-11-17T02:06:14.784105Z uid=..MPV1X2 round=..vtVcgS loading -> playing (validated 10 questions)

@@ -1,0 +1,123 @@
+# scenario T12 started 2026-11-17T02:23:33Z device=emulator-5554 commit=d47f396
+[02:23:33Z] clearlogs
+[02:23:33Z] restart
+    app restarted
+[02:23:38Z] signin a
+    already signed in as test user a (UID ..MPV1X2)
+[02:23:40Z] waitfor 20 Start round
+    PASS: "Start round" appeared
+[02:23:42Z] tap Start round
+    tapped "Start round" at 720,1474 (taps: 1)
+[02:23:46Z] waitfor 45 Question 1 of 10
+    PASS: "Question 1 of 10" appeared
+[02:23:48Z] playround
+    tapped "Choice 1:" at 720,1299 (taps: 1)
+    tapped "Next question" at 720,2822 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,963 (taps: 1)
+    tapped "Next question" at 720,2486 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1299 (taps: 1)
+    tapped "Next question" at 720,2822 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1299 (taps: 1)
+    tapped "Next question" at 720,2822 (taps: 1)
+    tapped "Choice 1:" at 720,963 (taps: 1)
+    tapped "Next question" at 720,2283 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "See results" at 720,2598 (taps: 1)
+    round finished
+[02:24:57Z] tap Fault lab
+    tapped "Fault lab" at 955,242 (taps: 1)
+[02:25:01Z] tap Inject unavailable
+    tapped "Inject unavailable" at 370,2507 (taps: 1)
+[02:25:04Z] expect Armed: unavailable
+    PASS: screen shows "Armed: unavailable"
+[02:25:06Z] back
+[02:25:07Z] tap Submit score to cloud
+    tapped "Submit score to cloud" at 720,1205 (taps: 1)
+[02:25:10Z] wait Cloud unavailable
+    PASS: "Cloud unavailable" appeared
+[02:25:12Z] expect INJECTED FAULT
+    PASS: screen shows "INJECTED FAULT"
+[02:25:15Z] expectnot Cloud verified
+    PASS: screen does not show "Cloud verified"
+[02:25:17Z] shot T12_1_unavailable
+    saved docs/evidence/screens/T12_1_unavailable.png
+[02:25:18Z] texts
+    | Results
+    | Fault lab
+    | Sign out
+    | Final score: 1 / 10
+    | Round ..PM2cFy
+    | Cloud unavailable INJECTED FAULT (development only) The cloud could not be reached (unavailable). Nothing was confirmed as saved. Retry when you are online; the same round ID is reused.
+    | Retry save (same round ID)
+    | Play again
+    | Back to home
+    | Review of all 10 answers
+    | Q1. What is the name of the alcoholic beverage made from potatoes or grains that originates from Poland and Russia? You chose: Rum (incorrect) Answer: Vodka
+    | Q2. Which of the following is not an Ivy League University? You chose: University of Pennsylvania (incorrect) Answer: Stanford
+[02:25:20Z] tap Fault lab
+    tapped "Fault lab" at 955,242 (taps: 1)
+[02:25:23Z] tap Inject resource-exhausted
+    tapped "Inject resource-exhausted" at 497,2675 (taps: 1)
+[02:25:27Z] expect Armed: resourceExhausted
+    PASS: screen shows "Armed: resourceExhausted"
+[02:25:29Z] back
+[02:25:30Z] tap Retry save
+    tapped "Retry save" at 720,1562 (taps: 1)
+[02:25:33Z] wait Quota exhausted
+    PASS: "Quota exhausted" appeared
+[02:25:35Z] expect INJECTED FAULT
+    PASS: screen shows "INJECTED FAULT"
+[02:25:37Z] expectnot Cloud verified
+    PASS: screen does not show "Cloud verified"
+[02:25:39Z] shot T12_2_resource_exhausted
+    saved docs/evidence/screens/T12_2_resource_exhausted.png
+[02:25:40Z] texts
+    | Results
+    | Fault lab
+    | Sign out
+    | Final score: 1 / 10
+    | Round ..PM2cFy
+    | Quota exhausted INJECTED FAULT (development only) The project quota is used up (resource-exhausted). Nothing was saved. Retry later; the app will not retry on its own.
+    | Retry save (same round ID)
+    | Play again
+    | Back to home
+    | Review of all 10 answers
+    | Q1. What is the name of the alcoholic beverage made from potatoes or grains that originates from Poland and Russia? You chose: Rum (incorrect) Answer: Vodka
+    | Q2. Which of the following is not an Ivy League University? You chose: University of Pennsylvania (incorrect) Answer: Stanford
+[02:25:43Z] sleep 15
+[02:25:58Z] note 15 seconds later: the app has not retried on its own
+    NOTE: 15 seconds later: the app has not retried on its own
+[02:25:58Z] expect Quota exhausted
+    PASS: screen shows "Quota exhausted"
+[02:26:00Z] expectnot Cloud verified
+    PASS: screen does not show "Cloud verified"
+[02:26:02Z] tap Retry save
+    tapped "Retry save" at 720,1467 (taps: 1)
+[02:26:06Z] waitfor 45 Cloud verified
+    PASS: "Cloud verified" appeared
+[02:26:08Z] shot T12_3_real_save_verified
+    saved docs/evidence/screens/T12_3_real_save_verified.png
+[02:26:09Z] texts
+    | Results
+    | Fault lab
+    | Sign out
+    | Final score: 1 / 10
+    | Round ..PM2cFy
+    | Cloud verified The server returned this attempt with its own timestamp.
+    | Play again
+    | My cloud attempts
+    | Back to home
+    | Path: users/..MPV1X2/attempts/..PM2cFy
+    | Document read from the server schemaVersion: 1 variant: A categoryId: 9 questionCount: 10 correctCount: 1 submittedAt: 2026-11-17T02:26:06.588Z Read source: server, pending writes: none
+    | Review of all 10 answers
+[02:26:11Z] logs T12
+    saved docs/evidence/logs/T12.log (23 lines)
+# scenario T12 finished 2026-11-17T02:26:11Z result=COMPLETED

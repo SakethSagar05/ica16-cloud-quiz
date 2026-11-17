@@ -1,0 +1,42 @@
+# scenario T07 started 2026-11-17T02:14:25Z device=emulator-5554 commit=d47f396
+[02:14:25Z] clearlogs
+[02:14:26Z] restart
+    app restarted
+[02:14:30Z] signin a
+    already signed in as test user a (UID ..MPV1X2)
+[02:14:33Z] note the app was force-stopped and relaunched; no round is started in this test
+    NOTE: the app was force-stopped and relaunched; no round is started in this test
+[02:14:33Z] tap My cloud attempts
+    tapped "My cloud attempts" at 720,1670 (taps: 1)
+[02:14:36Z] wait saved
+    PASS: "saved" appeared
+[02:14:38Z] texts
+    | Back
+    | Cloud attempts
+    | Read from the server for UID ..MPV1X2
+    | 1 saved attempt (newest first, up to 20)
+    | Attempt ..nUtqAh: 2 / 10 2026-11-17T02:14:00.793Z
+    | Round ID
+    | Look up on server
+    | Refresh list
+[02:14:40Z] tap Attempt ..
+    tapped "Attempt .." at 720,821 (taps: 1)
+[02:14:44Z] wait Attempt retrieved from the server
+    PASS: "Attempt retrieved from the server" appeared
+[02:14:46Z] shot T07_1_retrieved_after_restart
+    saved docs/evidence/screens/T07_1_retrieved_after_restart.png
+[02:14:46Z] texts
+    | Back
+    | Cloud attempts
+    | Read from the server for UID ..MPV1X2
+    | Attempt retrieved from the server
+    | Path: users/..MPV1X2/attempts/..nUtqAh
+    | Document read from the server schemaVersion: 1 variant: A categoryId: 9 questionCount: 10 correctCount: 2 submittedAt: 2026-11-17T02:14:00.793Z Read source: server, pending writes: none
+    | 1 saved attempt (newest first, up to 20)
+    | Attempt ..nUtqAh: 2 / 10 2026-11-17T02:14:00.793Z
+    | Round ID
+    | Look up on server
+    | Refresh list
+[02:14:48Z] logs T07
+    saved docs/evidence/logs/T07.log (4 lines)
+# scenario T07 finished 2026-11-17T02:14:48Z result=COMPLETED

@@ -1,0 +1,23 @@
+11-16 21:20:16.331 I/flutter (22681): [ICA16] 2026-11-17T02:20:16.331131Z app started build=d47f396 devTools=true
+11-16 21:20:16.331 I/flutter (22681): [ICA16] 2026-11-17T02:20:16.331879Z uid=..MPV1X2 round=..- signedOut -> home (authenticated)
+11-16 21:20:24.940 I/flutter (22681): [ICA16] 2026-11-17T02:20:24.940244Z uid=..MPV1X2 round=..ffk9eW home -> loading (GET opentdb amount=10 category=9 difficulty=easy type=multiple)
+11-16 21:20:25.724 I/flutter (22681): [ICA16] 2026-11-17T02:20:25.724572Z uid=..MPV1X2 round=..ffk9eW loading -> playing (validated 10 questions)
+11-16 21:20:30.363 I/flutter (22681): [ICA16] 2026-11-17T02:20:30.363076Z uid=..MPV1X2 round=..ffk9eW answered question 1: incorrect, score=0
+11-16 21:20:37.022 I/flutter (22681): [ICA16] 2026-11-17T02:20:37.022271Z uid=..MPV1X2 round=..ffk9eW answered question 2: incorrect, score=0
+11-16 21:20:43.731 I/flutter (22681): [ICA16] 2026-11-17T02:20:43.731660Z uid=..MPV1X2 round=..ffk9eW answered question 3: incorrect, score=0
+11-16 21:20:50.423 I/flutter (22681): [ICA16] 2026-11-17T02:20:50.423820Z uid=..MPV1X2 round=..ffk9eW answered question 4: incorrect, score=0
+11-16 21:20:57.123 I/flutter (22681): [ICA16] 2026-11-17T02:20:57.123087Z uid=..MPV1X2 round=..ffk9eW answered question 5: incorrect, score=0
+11-16 21:21:03.838 I/flutter (22681): [ICA16] 2026-11-17T02:21:03.838402Z uid=..MPV1X2 round=..ffk9eW answered question 6: correct, score=1
+11-16 21:21:10.543 I/flutter (22681): [ICA16] 2026-11-17T02:21:10.543776Z uid=..MPV1X2 round=..ffk9eW answered question 7: correct, score=2
+11-16 21:21:17.255 I/flutter (22681): [ICA16] 2026-11-17T02:21:17.255474Z uid=..MPV1X2 round=..ffk9eW answered question 8: incorrect, score=2
+11-16 21:21:23.942 I/flutter (22681): [ICA16] 2026-11-17T02:21:23.941991Z uid=..MPV1X2 round=..ffk9eW answered question 9: incorrect, score=2
+11-16 21:21:30.663 I/flutter (22681): [ICA16] 2026-11-17T02:21:30.663522Z uid=..MPV1X2 round=..ffk9eW answered question 10: correct, score=3
+11-16 21:21:34.022 I/flutter (22681): [ICA16] 2026-11-17T02:21:34.022251Z uid=..MPV1X2 round=..ffk9eW playing -> readyToSubmit (payload frozen correctCount=3)
+11-16 21:21:39.352 I/flutter (22681): [ICA16] 2026-11-17T02:21:39.352777Z uid=..MPV1X2 round=..ffk9eW readyToSubmit -> submitting (create-once transaction started)
+11-16 21:21:41.262 I/flutter (22681): [ICA16] 2026-11-17T02:21:41.262113Z uid=..MPV1X2 round=..ffk9eW transaction finished: created
+11-16 21:21:41.262 I/flutter (22681): [ICA16] 2026-11-17T02:21:41.262174Z uid=..MPV1X2 round=..ffk9eW submitting -> verifying (server-only read)
+11-16 21:21:41.466 I/flutter (22681): [ICA16] 2026-11-17T02:21:41.466366Z uid=..MPV1X2 round=..ffk9eW verifying -> cloudVerified (verified correctCount=3 submittedAt=2026-11-17T02:21:41.816Z fromCache=false pendingWrites=false)
+11-16 21:21:48.241 I/flutter (22681): [ICA16] 2026-11-17T02:21:48.241393Z uid=..- round=..- cloudVerified -> signedOut (no user)
+11-16 21:22:11.061 I/flutter (22681): [ICA16] 2026-11-17T02:22:11.061671Z uid=..bKg4f1 round=..- signedOut -> home (authenticated)
+11-16 21:22:28.003 I/flutter (22681): [ICA16] 2026-11-17T02:22:28.003400Z probe T10 read users/..MPV1X2/attempts/..ffk9eW: DENIED as expected (rejected with permission-denied)
+11-16 21:22:28.003 I/flutter (22681): [ICA16] 2026-11-17T02:22:28.003447Z probe T10 write into users/..MPV1X2/attempts: DENIED as expected (rejected with permission-denied)

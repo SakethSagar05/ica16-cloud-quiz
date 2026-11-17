@@ -78,6 +78,47 @@ do_firestore() {
   firebase deploy --only firestore:rules --project "$FIREBASE_PROJECT" 2>&1 | tee "$EVID/rules_deploy_output.txt"
 }
 
+do_firestore_api() {
+  [ "$ALLOW_FIREBASE" = y ] || { echo "Firebase changes were not approved."; return 1; }
+  echo "Deploying the rules first: firebase-tools turns on the Cloud Firestore API if it is off"
+  firebase deploy --only firestore:rules --project "$FIREBASE_PROJECT" --non-interactive 2>&1 | tail -25
+  local i
+  for i in 1 2 3 4 5 6; do
+    if do_firestore; then return 0; fi
+    echo "retry $i: waiting 20 s for the API change to propagate"
+    sleep 20
+  done
+  return 1
+}
+
+do_cloudlist() {
+  [ -f "$USERS" ] || { echo "no test users recorded"; return 1; }
+  # shellcheck disable=SC1090
+  source "$USERS"
+  local key base tokA tokB
+  key="$(python3 -c 'import json; print(json.load(open("android/app/google-services.json"))["client"][0]["api_key"][0]["current_key"])')" || return 1
+  rest_token() {
+    curl -s -m 20 -X POST "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=$key" \
+      -H 'Content-Type: application/json' \
+      -d "{\"email\":\"$1\",\"password\":\"$2\",\"returnSecureToken\":true}" |
+      python3 -c 'import json, sys; print(json.load(sys.stdin).get("idToken", ""))'
+  }
+  tokA="$(rest_token "$A_EMAIL" "$A_PASSWORD")"
+  tokB="$(rest_token "$B_EMAIL" "$B_PASSWORD")"
+  if [ -z "$tokA" ] || [ -z "$tokB" ]; then echo "REST sign-in failed"; return 1; fi
+  base="https://firestore.googleapis.com/v1/projects/$FIREBASE_PROJECT/databases/(default)/documents/users/$A_UID/attempts"
+  {
+    echo "Independent server read over the Firestore REST API (not the app, no SDK cache)"
+    echo "project: $FIREBASE_PROJECT   checked_at_utc: $(date -u '+%Y-%m-%dT%H:%M:%SZ')   commit: $(git rev-parse --short HEAD)"
+    echo
+    echo "== Signed in as test user A (owner): list users/..${A_UID: -6}/attempts"
+    curl -s -m 20 -H "Authorization: Bearer $tokA" "$base?pageSize=300" | SUFFIX_UID="${A_UID: -6}" python3 -B tools/cloud_list.py owner
+    echo
+    echo "== Signed in as test user B (..${B_UID: -6}): read user A's attempts (must be denied)"
+    curl -s -m 20 -H "Authorization: Bearer $tokB" "$base?pageSize=1" | python3 -B tools/cloud_list.py other
+  } | tee "$EVID/cloud_rest_listing.txt"
+}
+
 do_users() {
   if [ -f "$USERS" ]; then
     echo "Test users are already recorded in tools/.relay"
@@ -484,6 +525,9 @@ run_line() {
     platform) do_platform ;;
     configure) do_configure ;;
     firestore) do_firestore ;;
+    firestoreapi) do_firestore_api ;;
+    dbinfo) firebase firestore:databases:get "(default)" --project "$FIREBASE_PROJECT" 2>&1 | tee "$EVID/firestore_database_info.txt" ;;
+    wake) need_device && A shell input keyevent 224 && A shell wm dismiss-keyguard && A shell svc power stayon true && echo "    screen awake" ;;
     users) do_users ;;
     analyze) do_analyze ;;
     unittest) do_unittest ;;
@@ -562,6 +606,7 @@ run_line() {
       wait_any "$n" "$value"
       ;;
     secretscan) do_secretscan ;;
+    cloudlist) do_cloudlist ;;
     back) need_device && A shell input keyevent 4 && sleep 1 ;;
     hidekb) need_device && hide_keyboard ;;
     scroll)

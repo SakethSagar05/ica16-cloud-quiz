@@ -1,0 +1,47 @@
+# scenario T01 started 2026-11-17T02:05:08Z device=emulator-5554 commit=d47f396
+[02:05:08Z] clearlogs
+[02:05:08Z] restart
+    app restarted
+[02:05:12Z] waitany 45 Sign in to play|Sign out
+    PASS: "Sign in to play" appeared
+[02:05:14Z] tapif Sign out
+    "Sign out" is not on screen, skipped
+[02:05:17Z] wait Sign in to play
+    PASS: "Sign in to play" appeared
+[02:05:19Z] shot T01_1_signed_out
+    saved docs/evidence/screens/T01_1_signed_out.png
+[02:05:19Z] field Email|0
+    tapped "Email" at 720,886 (taps: 1)
+[02:05:22Z] cred a-email
+    typed a-email (31 characters, value not logged)
+[02:05:24Z] field Password|1
+    tapped "Password" at 720,1145 (taps: 1)
+[02:05:27Z] cred bad-password
+    typed bad-password (18 characters, value not logged)
+[02:05:28Z] hidekb
+[02:05:29Z] tap Sign in
+    tapped "Sign in" at 720,1394 (taps: 1)
+[02:05:32Z] wait Sign-in failed
+    PASS: "Sign-in failed" appeared
+[02:05:38Z] expect Email or password is incorrect
+    PASS: screen shows "Email or password is incorrect"
+[02:05:40Z] expectnot Start round
+    PASS: screen does not show "Start round"
+[02:05:42Z] shot T01_2_invalid_sign_in
+    saved docs/evidence/screens/T01_2_invalid_sign_in.png
+[02:05:43Z] field Password|1
+    tapped "Password" at 720,1509 (taps: 1)
+[02:05:46Z] cred a-password
+    typed a-password (18 characters, value not logged)
+[02:05:49Z] hidekb
+[02:05:50Z] tap Sign in
+    tapped "Sign in" at 720,1758 (taps: 1)
+[02:05:53Z] waitfor 45 Start round
+    PASS: "Start round" appeared
+[02:05:56Z] expectuid a
+    PASS: UID on screen ends in MPV1X2, the UID Firebase issued for test user a
+[02:05:58Z] shot T01_3_signed_in
+    saved docs/evidence/screens/T01_3_signed_in.png
+[02:05:58Z] logs T01
+    saved docs/evidence/logs/T01.log (4 lines)
+# scenario T01 finished 2026-11-17T02:05:59Z result=COMPLETED

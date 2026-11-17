@@ -1,0 +1,109 @@
+# scenario T03 started 2026-11-17T02:06:31Z device=emulator-5554 commit=d47f396
+[02:06:31Z] clearlogs
+[02:06:31Z] restart
+    app restarted
+[02:06:36Z] signin a
+    already signed in as test user a (UID ..MPV1X2)
+[02:06:38Z] tap Fault lab
+    tapped "Fault lab" at 955,242 (taps: 1)
+[02:06:41Z] tap Inject bad JSON
+    tapped "Inject bad JSON" at 350,1579 (taps: 1)
+[02:06:45Z] expect Armed: badJson
+    PASS: screen shows "Armed: badJson"
+[02:06:47Z] back
+[02:06:48Z] waitfor 20 Start round
+    PASS: "Start round" appeared
+[02:06:50Z] tap Start round
+    tapped "Start round" at 720,1474 (taps: 1)
+[02:06:53Z] wait Questions could not be loaded
+    PASS: "Questions could not be loaded" appeared
+[02:06:56Z] shot T03_1_bad_json
+    saved docs/evidence/screens/T03_1_bad_json.png
+[02:06:57Z] expect INJECTED FAULT
+    PASS: screen shows "INJECTED FAULT"
+[02:06:59Z] expect not valid JSON
+    PASS: screen shows "not valid JSON"
+[02:07:02Z] expect No round was started
+    PASS: screen shows "No round was started"
+[02:07:04Z] expectnot Choice 1:
+    PASS: screen does not show "Choice 1:"
+[02:07:06Z] texts
+    | Quiz
+    | Fault lab
+    | Sign out
+    | Questions could not be loaded INJECTED FAULT (development only) The question service sent data that is not valid JSON. No round was started.
+    | Retry now
+    | Back to home
+[02:07:09Z] tap Back to home
+    tapped "Back to home" at 720,1303 (taps: 1)
+[02:07:12Z] tap Fault lab
+    tapped "Fault lab" at 955,242 (taps: 1)
+[02:07:15Z] tap Inject API code 1
+    tapped "Inject API code 1" at 979,1579 (taps: 1)
+[02:07:18Z] expect Armed: apiCode
+    PASS: screen shows "Armed: apiCode"
+[02:07:21Z] back
+[02:07:22Z] waitfor 20 Start round
+    PASS: "Start round" appeared
+[02:07:24Z] tap Start round
+    tapped "Start round" at 720,1474 (taps: 1)
+[02:07:27Z] wait Questions could not be loaded
+    PASS: "Questions could not be loaded" appeared
+[02:07:30Z] shot T03_2_api_code
+    saved docs/evidence/screens/T03_2_api_code.png
+[02:07:30Z] expect INJECTED FAULT
+    PASS: screen shows "INJECTED FAULT"
+[02:07:33Z] expect API code 1
+    PASS: screen shows "API code 1"
+[02:07:35Z] expectnot Choice 1:
+    PASS: screen does not show "Choice 1:"
+[02:07:38Z] texts
+    | Quiz
+    | Fault lab
+    | Sign out
+    | Questions could not be loaded INJECTED FAULT (development only) The question service answered with API code 1 (no results for this request), so there are no questions to play. No round was started.
+    | Retry now
+    | Back to home
+[02:07:40Z] tap Back to home
+    tapped "Back to home" at 720,1492 (taps: 1)
+[02:07:43Z] tap Fault lab
+    tapped "Fault lab" at 955,242 (taps: 1)
+[02:07:47Z] tap Inject nine results
+    tapped "Inject nine results" at 375,1747 (taps: 1)
+[02:07:50Z] expect Armed: nineResults
+    PASS: screen shows "Armed: nineResults"
+[02:07:52Z] back
+[02:07:53Z] waitfor 20 Start round
+    PASS: "Start round" appeared
+[02:07:55Z] tap Start round
+    tapped "Start round" at 720,1474 (taps: 1)
+[02:07:59Z] wait Questions could not be loaded
+    PASS: "Questions could not be loaded" appeared
+[02:08:02Z] shot T03_3_nine_results
+    saved docs/evidence/screens/T03_3_nine_results.png
+[02:08:03Z] expect INJECTED FAULT
+    PASS: screen shows "INJECTED FAULT"
+[02:08:05Z] expect received 9
+    PASS: screen shows "received 9"
+[02:08:07Z] expectnot Choice 1:
+    PASS: screen does not show "Choice 1:"
+[02:08:10Z] texts
+    | Quiz
+    | Fault lab
+    | Sign out
+    | Questions could not be loaded INJECTED FAULT (development only) The question service sent a round this app cannot use: expected 10 questions but received 9. No round was started.
+    | Retry now
+    | Back to home
+[02:08:12Z] waitfor 20 Retry now
+    PASS: "Retry now" appeared
+[02:08:14Z] shot T03_4_retry_enabled_after_wait
+    saved docs/evidence/screens/T03_4_retry_enabled_after_wait.png
+[02:08:15Z] tap Retry now
+    tapped "Retry now" at 720,1201 (taps: 1)
+[02:08:18Z] waitfor 45 Question 1 of 10
+    PASS: "Question 1 of 10" appeared
+[02:08:23Z] shot T03_5_real_retry_loaded
+    saved docs/evidence/screens/T03_5_real_retry_loaded.png
+[02:08:24Z] logs T03
+    saved docs/evidence/logs/T03.log (12 lines)
+# scenario T03 finished 2026-11-17T02:08:24Z result=COMPLETED

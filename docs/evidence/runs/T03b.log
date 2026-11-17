@@ -1,0 +1,20 @@
+# scenario T03b started 2026-11-17T02:27:48Z device=emulator-5554 commit=d47f396
+[02:27:48Z] clearlogs
+[02:27:48Z] restart
+    app restarted
+[02:27:53Z] signin a
+    already signed in as test user a (UID ..MPV1X2)
+[02:27:55Z] tap Fault lab
+    could not find "Fault lab" on screen
+    STOPPED: this step failed
+    saved docs/evidence/screens/FAIL_T03b.png
+    | Home
+    | Sign out
+    | Signed in ica16.user.a.ecc31f@example.com UID ..MPV1X2
+    | Show full IDs
+    | General Knowledge
+    | 10 easy multiple-choice questions. One answer each.
+    | Start round
+    | My cloud attempts
+    | Build d47f396, release
+# scenario T03b finished 2026-11-17T02:28:32Z result=STOPPED

@@ -1,0 +1,21 @@
+11-16 21:12:23.199 I/flutter (19040): [ICA16] 2026-11-17T02:12:23.199344Z app started build=d47f396 devTools=true
+11-16 21:12:23.200 I/flutter (19040): [ICA16] 2026-11-17T02:12:23.200047Z uid=..MPV1X2 round=..- signedOut -> home (authenticated)
+11-16 21:12:34.227 I/flutter (19040): [ICA16] 2026-11-17T02:12:34.227602Z uid=..MPV1X2 listed 0 attempts from the server
+11-16 21:12:45.078 I/flutter (19040): [ICA16] 2026-11-17T02:12:45.078448Z uid=..MPV1X2 round=..nUtqAh home -> loading (GET opentdb amount=10 category=9 difficulty=easy type=multiple)
+11-16 21:12:45.905 I/flutter (19040): [ICA16] 2026-11-17T02:12:45.905496Z uid=..MPV1X2 round=..nUtqAh loading -> playing (validated 10 questions)
+11-16 21:12:50.491 I/flutter (19040): [ICA16] 2026-11-17T02:12:50.491390Z uid=..MPV1X2 round=..nUtqAh answered question 1: incorrect, score=0
+11-16 21:12:57.228 I/flutter (19040): [ICA16] 2026-11-17T02:12:57.228675Z uid=..MPV1X2 round=..nUtqAh answered question 2: incorrect, score=0
+11-16 21:13:03.976 I/flutter (19040): [ICA16] 2026-11-17T02:13:03.976402Z uid=..MPV1X2 round=..nUtqAh answered question 3: correct, score=1
+11-16 21:13:10.704 I/flutter (19040): [ICA16] 2026-11-17T02:13:10.704124Z uid=..MPV1X2 round=..nUtqAh answered question 4: incorrect, score=1
+11-16 21:13:17.434 I/flutter (19040): [ICA16] 2026-11-17T02:13:17.434595Z uid=..MPV1X2 round=..nUtqAh answered question 5: incorrect, score=1
+11-16 21:13:24.150 I/flutter (19040): [ICA16] 2026-11-17T02:13:24.150405Z uid=..MPV1X2 round=..nUtqAh answered question 6: incorrect, score=1
+11-16 21:13:30.883 I/flutter (19040): [ICA16] 2026-11-17T02:13:30.883720Z uid=..MPV1X2 round=..nUtqAh answered question 7: incorrect, score=1
+11-16 21:13:37.611 I/flutter (19040): [ICA16] 2026-11-17T02:13:37.611138Z uid=..MPV1X2 round=..nUtqAh answered question 8: correct, score=2
+11-16 21:13:44.351 I/flutter (19040): [ICA16] 2026-11-17T02:13:44.351677Z uid=..MPV1X2 round=..nUtqAh answered question 9: incorrect, score=2
+11-16 21:13:51.059 I/flutter (19040): [ICA16] 2026-11-17T02:13:51.059074Z uid=..MPV1X2 round=..nUtqAh answered question 10: incorrect, score=2
+11-16 21:13:54.424 I/flutter (19040): [ICA16] 2026-11-17T02:13:54.424191Z uid=..MPV1X2 round=..nUtqAh playing -> readyToSubmit (payload frozen correctCount=2)
+11-16 21:13:59.776 I/flutter (19040): [ICA16] 2026-11-17T02:13:59.776818Z uid=..MPV1X2 round=..nUtqAh readyToSubmit -> submitting (create-once transaction started)
+11-16 21:14:00.634 I/flutter (19040): [ICA16] 2026-11-17T02:14:00.634034Z uid=..MPV1X2 round=..nUtqAh transaction finished: created
+11-16 21:14:00.634 I/flutter (19040): [ICA16] 2026-11-17T02:14:00.634059Z uid=..MPV1X2 round=..nUtqAh submitting -> verifying (server-only read)
+11-16 21:14:00.874 I/flutter (19040): [ICA16] 2026-11-17T02:14:00.874261Z uid=..MPV1X2 round=..nUtqAh verifying -> cloudVerified (verified correctCount=2 submittedAt=2026-11-17T02:14:00.793Z fromCache=false pendingWrites=false)
+11-16 21:14:17.934 I/flutter (19040): [ICA16] 2026-11-17T02:14:17.933979Z uid=..MPV1X2 listed 1 attempts from the server

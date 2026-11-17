@@ -1,0 +1,4 @@
+11-16 21:05:09.660 I/flutter (15560): [ICA16] 2026-11-17T02:05:09.660918Z app started build=d47f396 devTools=true
+11-16 21:05:35.506 I/flutter (15560): [ICA16] 2026-11-17T02:05:35.505989Z uid=..- round=..- signedOut -> authError (code=invalid-credential)
+11-16 21:05:52.258 I/flutter (15560): [ICA16] 2026-11-17T02:05:52.258952Z uid=..- round=..- authError -> signedOut (retrying sign-in)
+11-16 21:05:52.736 I/flutter (15560): [ICA16] 2026-11-17T02:05:52.736389Z uid=..MPV1X2 round=..- signedOut -> home (authenticated)

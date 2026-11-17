@@ -1,0 +1,126 @@
+# scenario T09 started 2026-11-17T02:17:57Z device=emulator-5554 commit=d47f396
+[02:17:57Z] clearlogs
+[02:17:57Z] restart
+    app restarted
+[02:18:02Z] signin a
+    already signed in as test user a (UID ..MPV1X2)
+[02:18:05Z] tap My cloud attempts
+    tapped "My cloud attempts" at 720,1670 (taps: 1)
+[02:18:08Z] wait saved
+    PASS: "saved" appeared
+[02:18:10Z] note attempts on the server before this round
+    NOTE: attempts on the server before this round
+[02:18:10Z] texts
+    | Back
+    | Cloud attempts
+    | Read from the server for UID ..MPV1X2
+    | 2 saved attempts (newest first, up to 20)
+    | Attempt ..BU02ob: 3 / 10 2026-11-17T02:17:49.308Z
+    | Attempt ..nUtqAh: 2 / 10 2026-11-17T02:14:00.793Z
+    | Round ID
+    | Look up on server
+    | Refresh list
+[02:18:12Z] back
+[02:18:13Z] waitfor 20 Start round
+    PASS: "Start round" appeared
+[02:18:16Z] tap Start round
+    tapped "Start round" at 720,1474 (taps: 1)
+[02:18:19Z] waitfor 45 Question 1 of 10
+    PASS: "Question 1 of 10" appeared
+[02:18:21Z] playround
+    tapped "Choice 1:" at 720,963 (taps: 1)
+    tapped "Next question" at 720,2283 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2692 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2395 (taps: 1)
+    tapped "Choice 1:" at 720,1187 (taps: 1)
+    tapped "Next question" at 720,2710 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1187 (taps: 1)
+    tapped "Next question" at 720,2710 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1187 (taps: 1)
+    tapped "Next question" at 720,2507 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "See results" at 720,2598 (taps: 1)
+    round finished
+[02:19:30Z] tap Fault lab
+    tapped "Fault lab" at 955,242 (taps: 1)
+[02:19:33Z] tap Inject lost acknowledgement
+    tapped "Inject lost acknowledgement" at 538,2339 (taps: 1)
+[02:19:36Z] expect Armed: dropAcknowledgement
+    PASS: screen shows "Armed: dropAcknowledgement"
+[02:19:38Z] shot T09_1_fault_armed
+    saved docs/evidence/screens/T09_1_fault_armed.png
+[02:19:39Z] back
+[02:19:40Z] tap Submit score to cloud
+    tapped "Submit score to cloud" at 720,1205 (taps: 1)
+[02:19:43Z] waitfor 45 Save status unknown
+    PASS: "Save status unknown" appeared
+[02:19:45Z] expect INJECTED FAULT
+    PASS: screen shows "INJECTED FAULT"
+[02:19:47Z] expectnot Cloud verified
+    PASS: screen does not show "Cloud verified"
+[02:19:50Z] shot T09_2_save_unknown
+    saved docs/evidence/screens/T09_2_save_unknown.png
+[02:19:50Z] texts
+    | Results
+    | Fault lab
+    | Sign out
+    | Final score: 3 / 10
+    | Round ..L7U44w
+    | Save status unknown INJECTED FAULT (development only) The acknowledgement for this save was dropped on purpose. The app does not know whether the cloud has the attempt. Check the cloud to find out.
+    | Check the cloud
+    | The earlier save operation has finished. A server read will show whether it was committed.
+    | Replay and sign-out are disabled until this is resolved.
+    | Review of all 10 answers
+    | Q1. What is the French word for "hat"? You chose: Chapeau (correct)
+    | Q2. Which American president appears on a one dollar bill? You chose: Abraham Lincoln (incorrect) Answer: George Washington
+[02:19:53Z] tap Check the cloud
+    tapped "Check the cloud" at 720,1562 (taps: 1)
+[02:19:56Z] waitfor 45 Cloud verified
+    PASS: "Cloud verified" appeared
+[02:19:58Z] expect Recovered by a server read
+    PASS: screen shows "Recovered by a server read"
+[02:20:00Z] shot T09_3_recovered
+    saved docs/evidence/screens/T09_3_recovered.png
+[02:20:01Z] texts
+    | Results
+    | Fault lab
+    | Sign out
+    | Final score: 3 / 10
+    | Round ..L7U44w
+    | Cloud verified Recovered by a server read after an unknown result. No second document was written.
+    | Play again
+    | My cloud attempts
+    | Back to home
+    | Path: users/..MPV1X2/attempts/..L7U44w
+    | Document read from the server schemaVersion: 1 variant: A categoryId: 9 questionCount: 10 correctCount: 3 submittedAt: 2026-11-17T02:19:42.787Z Read source: server, pending writes: none
+[02:20:04Z] tap My cloud attempts
+    tapped "My cloud attempts" at 720,1495 (taps: 1)
+[02:20:07Z] wait saved
+    PASS: "saved" appeared
+[02:20:09Z] note attempts on the server after recovery
+    NOTE: attempts on the server after recovery
+[02:20:09Z] texts
+    | Back
+    | Cloud attempts
+    | Read from the server for UID ..MPV1X2
+    | 3 saved attempts (newest first, up to 20)
+    | Attempt ..L7U44w: 3 / 10 2026-11-17T02:19:42.787Z
+    | Attempt ..BU02ob: 3 / 10 2026-11-17T02:17:49.308Z
+    | Attempt ..nUtqAh: 2 / 10 2026-11-17T02:14:00.793Z
+    | Round ID
+    | Look up on server
+    | Refresh list
+[02:20:11Z] shot T09_4_attempts_after
+    saved docs/evidence/screens/T09_4_attempts_after.png
+[02:20:12Z] back
+[02:20:13Z] logs T09
+    saved docs/evidence/logs/T09.log (21 lines)
+# scenario T09 finished 2026-11-17T02:20:13Z result=COMPLETED

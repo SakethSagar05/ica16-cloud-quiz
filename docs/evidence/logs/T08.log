@@ -1,0 +1,21 @@
+11-16 21:14:51.432 I/flutter (20260): [ICA16] 2026-11-17T02:14:51.432580Z app started build=d47f396 devTools=true
+11-16 21:14:51.433 I/flutter (20260): [ICA16] 2026-11-17T02:14:51.433658Z uid=..MPV1X2 round=..- signedOut -> home (authenticated)
+11-16 21:14:59.971 I/flutter (20260): [ICA16] 2026-11-17T02:14:59.971892Z uid=..MPV1X2 round=..BU02ob home -> loading (GET opentdb amount=10 category=9 difficulty=easy type=multiple)
+11-16 21:15:04.340 I/flutter (20260): [ICA16] 2026-11-17T02:15:04.340566Z uid=..MPV1X2 round=..BU02ob loading -> playing (validated 10 questions)
+11-16 21:15:08.808 I/flutter (20260): [ICA16] 2026-11-17T02:15:08.808559Z uid=..MPV1X2 round=..BU02ob answered question 1: incorrect, score=0
+11-16 21:15:15.483 I/flutter (20260): [ICA16] 2026-11-17T02:15:15.483581Z uid=..MPV1X2 round=..BU02ob answered question 2: incorrect, score=0
+11-16 21:15:22.179 I/flutter (20260): [ICA16] 2026-11-17T02:15:22.179904Z uid=..MPV1X2 round=..BU02ob answered question 3: incorrect, score=0
+11-16 21:15:28.799 I/flutter (20260): [ICA16] 2026-11-17T02:15:28.799961Z uid=..MPV1X2 round=..BU02ob answered question 4: correct, score=1
+11-16 21:15:35.433 I/flutter (20260): [ICA16] 2026-11-17T02:15:35.433915Z uid=..MPV1X2 round=..BU02ob answered question 5: incorrect, score=1
+11-16 21:15:42.146 I/flutter (20260): [ICA16] 2026-11-17T02:15:42.146226Z uid=..MPV1X2 round=..BU02ob answered question 6: correct, score=2
+11-16 21:15:48.864 I/flutter (20260): [ICA16] 2026-11-17T02:15:48.864519Z uid=..MPV1X2 round=..BU02ob answered question 7: incorrect, score=2
+11-16 21:15:55.558 I/flutter (20260): [ICA16] 2026-11-17T02:15:55.558480Z uid=..MPV1X2 round=..BU02ob answered question 8: incorrect, score=2
+11-16 21:16:02.256 I/flutter (20260): [ICA16] 2026-11-17T02:16:02.256445Z uid=..MPV1X2 round=..BU02ob answered question 9: correct, score=3
+11-16 21:16:08.964 I/flutter (20260): [ICA16] 2026-11-17T02:16:08.964490Z uid=..MPV1X2 round=..BU02ob answered question 10: incorrect, score=3
+11-16 21:16:12.309 I/flutter (20260): [ICA16] 2026-11-17T02:16:12.309390Z uid=..MPV1X2 round=..BU02ob playing -> readyToSubmit (payload frozen correctCount=3)
+11-16 21:16:26.301 I/flutter (20260): [ICA16] 2026-11-17T02:16:26.301531Z uid=..MPV1X2 round=..BU02ob readyToSubmit -> submitting (create-once transaction started)
+11-16 21:16:26.395 I/flutter (20260): [ICA16] 2026-11-17T02:16:26.395886Z uid=..MPV1X2 round=..BU02ob submitting -> saveFailed (code=unavailable)
+11-16 21:17:48.377 I/flutter (20260): [ICA16] 2026-11-17T02:17:48.377628Z uid=..MPV1X2 round=..BU02ob saveFailed -> submitting (create-once transaction started)
+11-16 21:17:48.786 I/flutter (20260): [ICA16] 2026-11-17T02:17:48.785991Z uid=..MPV1X2 round=..BU02ob transaction finished: created
+11-16 21:17:48.786 I/flutter (20260): [ICA16] 2026-11-17T02:17:48.786380Z uid=..MPV1X2 round=..BU02ob submitting -> verifying (server-only read)
+11-16 21:17:48.993 I/flutter (20260): [ICA16] 2026-11-17T02:17:48.993618Z uid=..MPV1X2 round=..BU02ob verifying -> cloudVerified (verified correctCount=3 submittedAt=2026-11-17T02:17:49.308Z fromCache=false pendingWrites=false)

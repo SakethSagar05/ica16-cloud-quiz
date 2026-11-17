@@ -1,0 +1,59 @@
+# scenario release_check started 2026-11-17T02:26:11Z device=emulator-5554 commit=d47f396
+[02:26:11Z] clearlogs
+[02:26:11Z] install release
+Success
+[02:26:12Z] restart
+    app restarted
+[02:26:17Z] signin a
+    already signed in as test user a (UID ..MPV1X2)
+[02:26:20Z] expectnot Fault lab
+    PASS: screen does not show "Fault lab"
+[02:26:22Z] shot RELEASE_1_home
+    saved docs/evidence/screens/RELEASE_1_home.png
+[02:26:23Z] tap Start round
+    tapped "Start round" at 720,1474 (taps: 1)
+[02:26:26Z] waitfor 45 Question 1 of 10
+    PASS: "Question 1 of 10" appeared
+[02:26:29Z] playround
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1187 (taps: 1)
+    tapped "Next question" at 720,2710 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2395 (taps: 1)
+    tapped "Choice 1:" at 720,963 (taps: 1)
+    tapped "Next question" at 720,2486 (taps: 1)
+    tapped "Choice 1:" at 720,1299 (taps: 1)
+    tapped "Next question" at 720,2619 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1299 (taps: 1)
+    tapped "Next question" at 720,2822 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "See results" at 720,2395 (taps: 1)
+    round finished
+[02:27:38Z] tap Submit score to cloud
+    tapped "Submit score to cloud" at 720,1205 (taps: 1)
+[02:27:41Z] waitfor 45 Cloud verified
+    PASS: "Cloud verified" appeared
+[02:27:44Z] shot RELEASE_2_cloud_verified
+    saved docs/evidence/screens/RELEASE_2_cloud_verified.png
+[02:27:44Z] texts
+    | Results
+    | Sign out
+    | Final score: 3 / 10
+    | Round ..lXoPIT
+    | Cloud verified The server returned this attempt with its own timestamp.
+    | Play again
+    | My cloud attempts
+    | Back to home
+    | Path: users/..MPV1X2/attempts/..lXoPIT
+    | Document read from the server schemaVersion: 1 variant: A categoryId: 9 questionCount: 10 correctCount: 3 submittedAt: 2026-11-17T02:27:42.010Z Read source: server, pending writes: none
+    | Review of all 10 answers
+[02:27:46Z] logs RELEASE
+    saved docs/evidence/logs/RELEASE.log (19 lines)
+# scenario release_check finished 2026-11-17T02:27:46Z result=COMPLETED

@@ -1,0 +1,26 @@
+Independent server read over the Firestore REST API (not the app, no SDK cache)
+project: ica13-auth   checked_at_utc: 2026-11-17T02:27:47Z   commit: d47f396
+
+== Signed in as test user A (owner): list users/..MPV1X2/attempts
+documents: 6
+- users/..MPV1X2/attempts/..nUtqAh
+    createTime=2026-11-17T02:14:01.282389Z updateTime=2026-11-17T02:14:01.282389Z never_updated=yes
+    categoryId=9, correctCount=2, questionCount=10, schemaVersion=1, submittedAt=2026-11-17T02:14:00.793Z, variant=A
+- users/..MPV1X2/attempts/..BU02ob
+    createTime=2026-11-17T02:17:49.419719Z updateTime=2026-11-17T02:17:49.419719Z never_updated=yes
+    categoryId=9, correctCount=3, questionCount=10, schemaVersion=1, submittedAt=2026-11-17T02:17:49.308Z, variant=A
+- users/..MPV1X2/attempts/..L7U44w
+    createTime=2026-11-17T02:19:42.854625Z updateTime=2026-11-17T02:19:42.854625Z never_updated=yes
+    categoryId=9, correctCount=3, questionCount=10, schemaVersion=1, submittedAt=2026-11-17T02:19:42.787Z, variant=A
+- users/..MPV1X2/attempts/..ffk9eW
+    createTime=2026-11-17T02:21:41.869720Z updateTime=2026-11-17T02:21:41.869720Z never_updated=yes
+    categoryId=9, correctCount=3, questionCount=10, schemaVersion=1, submittedAt=2026-11-17T02:21:41.816Z, variant=A
+- users/..MPV1X2/attempts/..PM2cFy
+    createTime=2026-11-17T02:26:06.641737Z updateTime=2026-11-17T02:26:06.641737Z never_updated=yes
+    categoryId=9, correctCount=1, questionCount=10, schemaVersion=1, submittedAt=2026-11-17T02:26:06.588Z, variant=A
+- users/..MPV1X2/attempts/..lXoPIT
+    createTime=2026-11-17T02:27:42.078907Z updateTime=2026-11-17T02:27:42.078907Z never_updated=yes
+    categoryId=9, correctCount=3, questionCount=10, schemaVersion=1, submittedAt=2026-11-17T02:27:42.010Z, variant=A
+
+== Signed in as test user B (..bKg4f1): read user A's attempts (must be denied)
+DENIED: 403 PERMISSION_DENIED Missing or insufficient permissions.

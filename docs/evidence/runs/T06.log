@@ -1,0 +1,106 @@
+# scenario T06 started 2026-11-17T02:12:20Z device=emulator-5554 commit=d47f396
+[02:12:20Z] clearlogs
+[02:12:20Z] restart
+    app restarted
+[02:12:25Z] signin a
+    already signed in as test user a (UID ..MPV1X2)
+[02:12:27Z] tap My cloud attempts
+    tapped "My cloud attempts" at 720,1670 (taps: 1)
+[02:12:31Z] wait saved
+    PASS: "saved" appeared
+[02:12:36Z] note attempts on the server before this round
+    NOTE: attempts on the server before this round
+[02:12:36Z] texts
+    | Back
+    | Cloud attempts
+    | Read from the server for UID ..MPV1X2
+    | 0 saved attempts (newest first, up to 20)
+    | Round ID
+    | Look up on server
+    | Refresh list
+[02:12:39Z] shot T06_1_attempts_before
+    saved docs/evidence/screens/T06_1_attempts_before.png
+[02:12:39Z] back
+[02:12:40Z] waitfor 20 Start round
+    PASS: "Start round" appeared
+[02:12:43Z] tap Start round
+    tapped "Start round" at 720,1474 (taps: 1)
+[02:12:46Z] waitfor 45 Question 1 of 10
+    PASS: "Question 1 of 10" appeared
+[02:12:48Z] playround
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2395 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1187 (taps: 1)
+    tapped "Next question" at 720,2710 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1299 (taps: 1)
+    tapped "Next question" at 720,2822 (taps: 1)
+    tapped "Choice 1:" at 720,1187 (taps: 1)
+    tapped "Next question" at 720,2507 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1016 (taps: 1)
+    tapped "See results" at 720,2790 (taps: 1)
+    round finished
+[02:13:58Z] tap2 Submit score to cloud
+    tapped "Submit score to cloud" at 720,1205 (taps: 2)
+[02:14:01Z] waitfor 45 Cloud verified
+    PASS: "Cloud verified" appeared
+[02:14:03Z] shot T06_2_cloud_verified
+    saved docs/evidence/screens/T06_2_cloud_verified.png
+[02:14:03Z] texts
+    | Results
+    | Fault lab
+    | Sign out
+    | Final score: 2 / 10
+    | Round ..nUtqAh
+    | Cloud verified The server returned this attempt with its own timestamp.
+    | Play again
+    | My cloud attempts
+    | Back to home
+    | Path: users/..MPV1X2/attempts/..nUtqAh
+    | Document read from the server schemaVersion: 1 variant: A categoryId: 9 questionCount: 10 correctCount: 2 submittedAt: 2026-11-17T02:14:00.793Z Read source: server, pending writes: none
+    | Review of all 10 answers
+[02:14:06Z] scroll down
+[02:14:07Z] shot T06_3_server_document
+    saved docs/evidence/screens/T06_3_server_document.png
+[02:14:08Z] texts
+    | Results
+    | Fault lab
+    | Sign out
+    | Path: users/..MPV1X2/attempts/..nUtqAh
+    | Document read from the server schemaVersion: 1 variant: A categoryId: 9 questionCount: 10 correctCount: 2 submittedAt: 2026-11-17T02:14:00.793Z Read source: server, pending writes: none
+    | Review of all 10 answers
+    | Q1. Gouda cheese is from which European country? You chose: Germany (incorrect) Answer: The Netherlands
+    | Q2. Who invented the first ever chocolate bar, in 1847? You chose: John Tyler (incorrect) Answer: Joseph Fry
+    | Q3. Which of these colours is NOT featured in the logo for Google? You chose: Pink (correct)
+    | Q4. The Flag of the European Union has how many stars on it? You chose: 10 (incorrect) Answer: 12
+[02:14:10Z] scroll top
+[02:14:16Z] tap My cloud attempts
+    tapped "My cloud attempts" at 720,1401 (taps: 1)
+[02:14:19Z] wait saved
+    PASS: "saved" appeared
+[02:14:21Z] note attempts on the server after this round
+    NOTE: attempts on the server after this round
+[02:14:21Z] texts
+    | Back
+    | Cloud attempts
+    | Read from the server for UID ..MPV1X2
+    | 1 saved attempt (newest first, up to 20)
+    | Attempt ..nUtqAh: 2 / 10 2026-11-17T02:14:00.793Z
+    | Round ID
+    | Look up on server
+    | Refresh list
+[02:14:23Z] shot T06_4_attempts_after
+    saved docs/evidence/screens/T06_4_attempts_after.png
+[02:14:24Z] back
+[02:14:25Z] logs T06
+    saved docs/evidence/logs/T06.log (21 lines)
+# scenario T06 finished 2026-11-17T02:14:25Z result=COMPLETED

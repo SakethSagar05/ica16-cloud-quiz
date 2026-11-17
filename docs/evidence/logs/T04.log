@@ -1,0 +1,15 @@
+11-16 21:08:27.632 I/flutter (17190): [ICA16] 2026-11-17T02:08:27.632559Z app started build=d47f396 devTools=true
+11-16 21:08:27.633 I/flutter (17190): [ICA16] 2026-11-17T02:08:27.633508Z uid=..MPV1X2 round=..- signedOut -> home (authenticated)
+11-16 21:08:36.230 I/flutter (17190): [ICA16] 2026-11-17T02:08:36.230305Z uid=..MPV1X2 round=..SxhpWb home -> loading (GET opentdb amount=10 category=9 difficulty=easy type=multiple)
+11-16 21:08:37.834 I/flutter (17190): [ICA16] 2026-11-17T02:08:37.834328Z uid=..MPV1X2 round=..SxhpWb loading -> playing (validated 10 questions)
+11-16 21:08:45.029 I/flutter (17190): [ICA16] 2026-11-17T02:08:45.029367Z uid=..MPV1X2 round=..SxhpWb answered question 1: incorrect, score=0
+11-16 21:09:02.192 I/flutter (17190): [ICA16] 2026-11-17T02:09:02.192061Z uid=..MPV1X2 round=..SxhpWb answered question 2: incorrect, score=0
+11-16 21:09:13.073 I/flutter (17190): [ICA16] 2026-11-17T02:09:13.073338Z uid=..MPV1X2 round=..SxhpWb answered question 3: incorrect, score=0
+11-16 21:09:22.092 I/flutter (17190): [ICA16] 2026-11-17T02:09:22.092556Z uid=..MPV1X2 round=..SxhpWb answered question 4: incorrect, score=0
+11-16 21:09:28.811 I/flutter (17190): [ICA16] 2026-11-17T02:09:28.811413Z uid=..MPV1X2 round=..SxhpWb answered question 5: correct, score=1
+11-16 21:09:35.534 I/flutter (17190): [ICA16] 2026-11-17T02:09:35.534700Z uid=..MPV1X2 round=..SxhpWb answered question 6: incorrect, score=1
+11-16 21:09:42.251 I/flutter (17190): [ICA16] 2026-11-17T02:09:42.251022Z uid=..MPV1X2 round=..SxhpWb answered question 7: incorrect, score=1
+11-16 21:09:48.902 I/flutter (17190): [ICA16] 2026-11-17T02:09:48.902266Z uid=..MPV1X2 round=..SxhpWb answered question 8: incorrect, score=1
+11-16 21:09:55.618 I/flutter (17190): [ICA16] 2026-11-17T02:09:55.618020Z uid=..MPV1X2 round=..SxhpWb answered question 9: correct, score=2
+11-16 21:10:02.335 I/flutter (17190): [ICA16] 2026-11-17T02:10:02.335090Z uid=..MPV1X2 round=..SxhpWb answered question 10: correct, score=3
+11-16 21:10:05.692 I/flutter (17190): [ICA16] 2026-11-17T02:10:05.692141Z uid=..MPV1X2 round=..SxhpWb playing -> readyToSubmit (payload frozen correctCount=3)

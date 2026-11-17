@@ -1,0 +1,18 @@
+# T03 supplement: after a blocked request the retry button stays rate limited
+# for 5 s (minRequestGap), then becomes available. No automatic retry.
+clearlogs
+restart
+signin a
+tap Fault lab
+tap Inject bad JSON
+expect Armed: badJson
+back
+waitfor 20 Start round
+tap Start round
+waitfor 6 Retry allowed in
+shot T03_6_retry_rate_limited
+texts
+waitfor 15 Retry now
+shot T03_7_retry_available_after_5s
+expectnot Question 1 of 10
+logs T03b

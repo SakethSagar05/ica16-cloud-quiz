@@ -1,0 +1,150 @@
+# scenario T08 started 2026-11-17T02:14:48Z device=emulator-5554 commit=d47f396
+[02:14:48Z] clearlogs
+[02:14:48Z] restart
+    app restarted
+[02:14:53Z] signin a
+    already signed in as test user a (UID ..MPV1X2)
+[02:14:55Z] waitfor 20 Start round
+    PASS: "Start round" appeared
+[02:14:58Z] tap Start round
+    tapped "Start round" at 720,1474 (taps: 1)
+[02:15:01Z] waitfor 45 Question 1 of 10
+    PASS: "Question 1 of 10" appeared
+[02:15:06Z] playround
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1299 (taps: 1)
+    tapped "Next question" at 720,2822 (taps: 1)
+    tapped "Choice 1:" at 720,1187 (taps: 1)
+    tapped "Next question" at 720,2507 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1187 (taps: 1)
+    tapped "Next question" at 720,2507 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1299 (taps: 1)
+    tapped "Next question" at 720,2619 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "See results" at 720,2598 (taps: 1)
+    round finished
+[02:16:16Z] note round ID before going offline
+    NOTE: round ID before going offline
+[02:16:16Z] texts
+    | Results
+    | Fault lab
+    | Sign out
+    | Final score: 3 / 10
+    | Round ..BU02ob
+    | Not saved yet Submit to save this attempt to your cloud account.
+    | Submit score to cloud
+    | Play again
+    | Back to home
+    | Review of all 10 answers
+    | Q1. Which one of the following rhythm games was made by Harmonix? You chose: Meat Beat Mania (incorrect) Answer: Rock Band
+    | Q2. What zodiac sign is represented by a pair of scales? You chose: Sagittarius (incorrect) Answer: Libra
+    | Q3. Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur? You chose: Alan Sugar (incorrect) Answer: Richard Branson
+[02:16:18Z] net off
+    network OFF (airplane mode)
+[02:16:20Z] sleep 4
+[02:16:24Z] tap Submit score to cloud
+    tapped "Submit score to cloud" at 720,1205 (taps: 1)
+[02:16:27Z] waitany 75 Cloud unavailable|Save status unknown
+    PASS: "Cloud unavailable" appeared
+[02:16:30Z] shot T08_1_offline_result
+    saved docs/evidence/screens/T08_1_offline_result.png
+[02:16:30Z] expectnot Cloud verified
+    PASS: screen does not show "Cloud verified"
+[02:16:32Z] texts
+    | Results
+    | Fault lab
+    | Sign out
+    | Final score: 3 / 10
+    | Round ..BU02ob
+    | Cloud unavailable The cloud could not be reached (unavailable). Nothing was confirmed as saved. Retry when you are online; the same round ID is reused.
+    | Retry save (same round ID)
+    | Play again
+    | Back to home
+    | Review of all 10 answers
+    | Q1. Which one of the following rhythm games was made by Harmonix? You chose: Meat Beat Mania (incorrect) Answer: Rock Band
+    | Q2. What zodiac sign is represented by a pair of scales? You chose: Sagittarius (incorrect) Answer: Libra
+    | Q3. Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur? You chose: Alan Sugar (incorrect) Answer: Richard Branson
+[02:16:34Z] tapif Check the cloud
+    "Check the cloud" is not on screen, skipped
+[02:16:37Z] sleep 13
+[02:16:50Z] shot T08_2_offline_check
+    saved docs/evidence/screens/T08_2_offline_check.png
+[02:16:51Z] expectnot Cloud verified
+    PASS: screen does not show "Cloud verified"
+[02:16:53Z] texts
+    | Results
+    | Fault lab
+    | Sign out
+    | Final score: 3 / 10
+    | Round ..BU02ob
+    | Cloud unavailable The cloud could not be reached (unavailable). Nothing was confirmed as saved. Retry when you are online; the same round ID is reused.
+    | Retry save (same round ID)
+    | Play again
+    | Back to home
+    | Review of all 10 answers
+    | Q1. Which one of the following rhythm games was made by Harmonix? You chose: Meat Beat Mania (incorrect) Answer: Rock Band
+    | Q2. What zodiac sign is represented by a pair of scales? You chose: Sagittarius (incorrect) Answer: Libra
+    | Q3. Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur? You chose: Alan Sugar (incorrect) Answer: Richard Branson
+[02:16:55Z] net on
+    network ON
+[02:16:57Z] sleep 14
+[02:17:12Z] tapif Check the cloud
+    "Check the cloud" is not on screen, skipped
+[02:17:14Z] sleep 8
+[02:17:22Z] tapif Check the cloud
+    "Check the cloud" is not on screen, skipped
+[02:17:24Z] sleep 8
+[02:17:32Z] tapif Check the cloud
+    "Check the cloud" is not on screen, skipped
+[02:17:35Z] sleep 6
+[02:17:41Z] shot T08_3_after_reconnect
+    saved docs/evidence/screens/T08_3_after_reconnect.png
+[02:17:42Z] texts
+    | Results
+    | Fault lab
+    | Sign out
+    | Final score: 3 / 10
+    | Round ..BU02ob
+    | Cloud unavailable The cloud could not be reached (unavailable). Nothing was confirmed as saved. Retry when you are online; the same round ID is reused.
+    | Retry save (same round ID)
+    | Play again
+    | Back to home
+    | Review of all 10 answers
+    | Q1. Which one of the following rhythm games was made by Harmonix? You chose: Meat Beat Mania (incorrect) Answer: Rock Band
+    | Q2. What zodiac sign is represented by a pair of scales? You chose: Sagittarius (incorrect) Answer: Libra
+    | Q3. Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur? You chose: Alan Sugar (incorrect) Answer: Richard Branson
+[02:17:44Z] tapif Retry save
+    tapped "Retry save" at 720,1488 (taps: 1)
+[02:17:50Z] tapif Submit score to cloud
+    "Submit score to cloud" is not on screen, skipped
+[02:17:52Z] waitfor 75 Cloud verified
+    PASS: "Cloud verified" appeared
+[02:17:54Z] note same round ID after recovery
+    NOTE: same round ID after recovery
+[02:17:54Z] shot T08_4_recovered
+    saved docs/evidence/screens/T08_4_recovered.png
+[02:17:55Z] texts
+    | Results
+    | Fault lab
+    | Sign out
+    | Final score: 3 / 10
+    | Round ..BU02ob
+    | Cloud verified The server returned this attempt with its own timestamp.
+    | Play again
+    | My cloud attempts
+    | Back to home
+    | Path: users/..MPV1X2/attempts/..BU02ob
+    | Document read from the server schemaVersion: 1 variant: A categoryId: 9 questionCount: 10 correctCount: 3 submittedAt: 2026-11-17T02:17:49.308Z Read source: server, pending writes: none
+    | Review of all 10 answers
+[02:17:57Z] logs T08
+    saved docs/evidence/logs/T08.log (21 lines)
+# scenario T08 finished 2026-11-17T02:17:57Z result=COMPLETED

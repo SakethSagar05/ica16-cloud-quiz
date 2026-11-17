@@ -1,0 +1,134 @@
+# scenario T04 started 2026-11-17T02:08:24Z device=emulator-5554 commit=d47f396
+[02:08:25Z] clearlogs
+[02:08:25Z] restart
+    app restarted
+[02:08:29Z] signin a
+    already signed in as test user a (UID ..MPV1X2)
+[02:08:32Z] waitfor 20 Start round
+    PASS: "Start round" appeared
+[02:08:34Z] tap Start round
+    tapped "Start round" at 720,1474 (taps: 1)
+[02:08:37Z] waitfor 45 Question 1 of 10
+    PASS: "Question 1 of 10" appeared
+[02:08:40Z] note choice order before answering question 1
+    NOTE: choice order before answering question 1
+[02:08:40Z] texts
+    | Quiz
+    | Fault lab
+    | Sign out
+    | Question 1 of 10 Score: 0
+    | 0
+    | Round ..SxhpWb
+    | What does the 'S' stand for in the abbreviation SIM, as in SIM card?
+    | Choice 1: Single
+    | Choice 2: Secure
+    | Choice 3: Solid
+    | Choice 4: Subscriber
+    | Choose one answer Your first tap is final for this question.
+    | Next question
+[02:08:42Z] shot T04_1_question_before
+    saved docs/evidence/screens/T04_1_question_before.png
+[02:08:43Z] tap2 Choice 1:
+    tapped "Choice 1:" at 720,1075 (taps: 2)
+[02:08:46Z] tap Choice 2:
+    tapped "Choice 2:" at 720,1414 (taps: 1)
+[02:08:49Z] note after a double tap on choice 1 and one more tap on choice 2
+    NOTE: after a double tap on choice 1 and one more tap on choice 2
+[02:08:49Z] texts
+    | Quiz
+    | Fault lab
+    | Sign out
+    | Question 1 of 10 Score: 0
+    | 10
+    | Round ..SxhpWb
+    | What does the 'S' stand for in the abbreviation SIM, as in SIM card?
+    | Choice 1: Single (your answer, incorrect)
+    | Choice 2: Secure
+    | Choice 3: Solid
+    | Choice 4: Subscriber (the right answer)
+    | Incorrect: no point The answer was: Subscriber
+    | Next question
+[02:08:52Z] shot T04_2_after_double_tap
+    saved docs/evidence/screens/T04_2_after_double_tap.png
+[02:08:52Z] expectnot Score: 2
+    PASS: screen does not show "Score: 2"
+[02:08:55Z] tap Next question
+    tapped "Next question" at 720,2598 (taps: 1)
+[02:08:58Z] wait Question 2 of 10
+    PASS: "Question 2 of 10" appeared
+[02:09:00Z] tap Choice 1:
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+[02:09:03Z] texts
+    | Quiz
+    | Fault lab
+    | Sign out
+    | Question 2 of 10 Score: 0
+    | 20
+    | Round ..SxhpWb
+    | "A3", "B1", and "Legal" are typical names of sizes for what object?
+    | Choice 1: Airplanes (your answer, incorrect)
+    | Choice 2: Law books
+    | Choice 3: Paper (the right answer)
+    | Choice 4: Phone screens
+    | Incorrect: no point The answer was: Paper
+    | Next question
+[02:09:05Z] shot T04_3_second_answer
+    saved docs/evidence/screens/T04_3_second_answer.png
+[02:09:06Z] tap Next question
+    tapped "Next question" at 720,2598 (taps: 1)
+[02:09:09Z] wait Question 3 of 10
+    PASS: "Question 3 of 10" appeared
+[02:09:11Z] tap Choice 1:
+    tapped "Choice 1:" at 720,1187 (taps: 1)
+[02:09:14Z] texts
+    | Quiz
+    | Fault lab
+    | Sign out
+    | Question 3 of 10 Score: 0
+    | 30
+    | Round ..SxhpWb
+    | What is the name of the poker hand containing three of a kind and a pair?
+    | Choice 1: High card (your answer, incorrect)
+    | Choice 2: Full House (the right answer)
+    | Choice 3: Straight
+    | Choice 4: Flush
+    | Incorrect: no point The answer was: Full House
+    | Next question
+[02:09:16Z] shot T04_4_third_answer
+    saved docs/evidence/screens/T04_4_third_answer.png
+[02:09:17Z] playround
+    tapped "Next question" at 720,2710 (taps: 1)
+    tapped "Choice 1:" at 720,1187 (taps: 1)
+    tapped "Next question" at 720,2710 (taps: 1)
+    tapped "Choice 1:" at 720,1187 (taps: 1)
+    tapped "Next question" at 720,2507 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1075 (taps: 1)
+    tapped "Next question" at 720,2598 (taps: 1)
+    tapped "Choice 1:" at 720,1187 (taps: 1)
+    tapped "Next question" at 720,2507 (taps: 1)
+    tapped "Choice 1:" at 720,963 (taps: 1)
+    tapped "See results" at 720,2283 (taps: 1)
+    round finished
+[02:10:09Z] shot T04_5_results
+    saved docs/evidence/screens/T04_5_results.png
+[02:10:09Z] texts
+    | Results
+    | Fault lab
+    | Sign out
+    | Final score: 3 / 10
+    | Round ..SxhpWb
+    | Not saved yet Submit to save this attempt to your cloud account.
+    | Submit score to cloud
+    | Play again
+    | Back to home
+    | Review of all 10 answers
+    | Q1. What does the 'S' stand for in the abbreviation SIM, as in SIM card? You chose: Single (incorrect) Answer: Subscriber
+    | Q2. "A3", "B1", and "Legal" are typical names of sizes for what object? You chose: Airplanes (incorrect) Answer: Paper
+    | Q3. What is the name of the poker hand containing three of a kind and a pair? You chose: High card (incorrect) Answer: Full House
+[02:10:11Z] logs T04
+    saved docs/evidence/logs/T04.log (15 lines)
+# scenario T04 finished 2026-11-17T02:10:12Z result=COMPLETED

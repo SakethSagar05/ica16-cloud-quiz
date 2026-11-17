@@ -1,0 +1,12 @@
+11-16 21:06:34.132 I/flutter (16295): [ICA16] 2026-11-17T02:06:34.131947Z app started build=d47f396 devTools=true
+11-16 21:06:34.132 I/flutter (16295): [ICA16] 2026-11-17T02:06:34.132597Z uid=..MPV1X2 round=..- signedOut -> home (authenticated)
+11-16 21:06:52.231 I/flutter (16295): [ICA16] 2026-11-17T02:06:52.231642Z uid=..MPV1X2 round=..xbpLrI home -> loading (GET opentdb amount=10 category=9 difficulty=easy type=multiple)
+11-16 21:06:52.232 I/flutter (16295): [ICA16] 2026-11-17T02:06:52.232152Z uid=..MPV1X2 round=..xbpLrI loading -> requestError [INJECTED] (kind=malformedJson)
+11-16 21:07:10.728 I/flutter (16295): [ICA16] 2026-11-17T02:07:10.728430Z uid=..MPV1X2 round=..- requestError -> home (back to home)
+11-16 21:07:25.993 I/flutter (16295): [ICA16] 2026-11-17T02:07:25.993798Z uid=..MPV1X2 round=..QkK9GN home -> loading (GET opentdb amount=10 category=9 difficulty=easy type=multiple)
+11-16 21:07:25.994 I/flutter (16295): [ICA16] 2026-11-17T02:07:25.994234Z uid=..MPV1X2 round=..QkK9GN loading -> requestError [INJECTED] (kind=apiCode)
+11-16 21:07:42.220 I/flutter (16295): [ICA16] 2026-11-17T02:07:42.220477Z uid=..MPV1X2 round=..- requestError -> home (back to home)
+11-16 21:07:57.375 I/flutter (16295): [ICA16] 2026-11-17T02:07:57.375319Z uid=..MPV1X2 round=..8kBEGB home -> loading (GET opentdb amount=10 category=9 difficulty=easy type=multiple)
+11-16 21:07:57.375 I/flutter (16295): [ICA16] 2026-11-17T02:07:57.375582Z uid=..MPV1X2 round=..8kBEGB loading -> requestError [INJECTED] (kind=schema)
+11-16 21:08:17.092 I/flutter (16295): [ICA16] 2026-11-17T02:08:17.092431Z uid=..MPV1X2 round=..8kBEGB requestError -> loading (GET opentdb amount=10 category=9 difficulty=easy type=multiple)
+11-16 21:08:21.283 I/flutter (16295): [ICA16] 2026-11-17T02:08:21.283598Z uid=..MPV1X2 round=..8kBEGB loading -> playing (validated 10 questions)
