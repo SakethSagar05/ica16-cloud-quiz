@@ -1,0 +1,24 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "ica13-auth",
+          "appId": "1:129122233835:android:047f4752a8704254fcbdae",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "ica13-auth",
+          "configurations": {
+            "android": "1:129122233835:android:047f4752a8704254fcbdae"
+          }
+        }
+      }
+    }
+  }
+}
