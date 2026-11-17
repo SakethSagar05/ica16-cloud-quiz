@@ -1,0 +1,31 @@
+# T04: answer correctly, incorrectly and double tap.
+# Expected: readable decoded text, stable choices, one score change.
+clearlogs
+restart
+signin a
+waitfor 20 Start round
+tap Start round
+waitfor 45 Question 1 of 10
+note choice order before answering question 1
+texts
+shot T04_1_question_before
+tap2 Choice 1:
+tap Choice 2:
+note after a double tap on choice 1 and one more tap on choice 2
+texts
+shot T04_2_after_double_tap
+expectnot Score: 2
+tap Next question
+wait Question 2 of 10
+tap Choice 1:
+texts
+shot T04_3_second_answer
+tap Next question
+wait Question 3 of 10
+tap Choice 1:
+texts
+shot T04_4_third_answer
+playround
+shot T04_5_results
+texts
+logs T04

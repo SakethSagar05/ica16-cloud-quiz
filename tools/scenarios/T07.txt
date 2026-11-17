@@ -1,0 +1,14 @@
+# T07: restart while online; retrieve the saved attempt as the same user.
+# Expected: the server returns the original attempt without replaying the quiz.
+clearlogs
+restart
+signin a
+note the app was force-stopped and relaunched; no round is started in this test
+tap My cloud attempts
+wait saved
+texts
+tap Attempt ..
+wait Attempt retrieved from the server
+shot T07_1_retrieved_after_restart
+texts
+logs T07

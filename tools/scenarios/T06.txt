@@ -1,0 +1,30 @@
+# T06: submit online and double tap Submit.
+# Expected: one cloud document, a server timestamp, a matching server-only read.
+clearlogs
+restart
+signin a
+tap My cloud attempts
+wait saved
+note attempts on the server before this round
+texts
+shot T06_1_attempts_before
+back
+waitfor 20 Start round
+tap Start round
+waitfor 45 Question 1 of 10
+playround
+tap2 Submit score to cloud
+waitfor 45 Cloud verified
+shot T06_2_cloud_verified
+texts
+scroll down
+shot T06_3_server_document
+texts
+scroll top
+tap My cloud attempts
+wait saved
+note attempts on the server after this round
+texts
+shot T06_4_attempts_after
+back
+logs T06

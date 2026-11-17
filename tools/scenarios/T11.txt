@@ -1,0 +1,16 @@
+# T11: try score 11, an extra field and an update (development-only invalid
+# requests against the deployed rules).
+# Expected: all three are rejected; the original attempt remains unchanged.
+clearlogs
+restart
+signin a
+tap Fault lab
+tap Run T11 probes
+waitfor 90 T11 create with correctCount 11
+sleep 3
+shot T11_1_probe_results
+texts
+scroll down
+shot T11_2_probe_results_more
+texts
+logs T11

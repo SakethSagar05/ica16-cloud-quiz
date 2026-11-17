@@ -1,0 +1,15 @@
+# T02: load the exact Class A URL.
+# Expected: 10 valid easy category-9 multiple-choice questions.
+clearlogs
+restart
+signin a
+waitfor 20 Start round
+tap Start round
+waitfor 45 Question 1 of 10
+shot T02_1_first_question
+texts
+expect Choice 4:
+expectnot Choice 5:
+logs T02
+sleep 6
+apicheck

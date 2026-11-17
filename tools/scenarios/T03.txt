@@ -1,0 +1,51 @@
+# T03: inject bad JSON, a nonzero API code and nine results (development-only
+# fault lab; the bodies go through the real validation).
+# Expected: each case blocks play and offers a rate-limited retry.
+clearlogs
+restart
+signin a
+tap Fault lab
+tap Inject bad JSON
+expect Armed: badJson
+back
+waitfor 20 Start round
+tap Start round
+wait Questions could not be loaded
+shot T03_1_bad_json
+expect INJECTED FAULT
+expect not valid JSON
+expect No round was started
+expectnot Choice 1:
+texts
+tap Back to home
+tap Fault lab
+tap Inject API code 1
+expect Armed: apiCode
+back
+waitfor 20 Start round
+tap Start round
+wait Questions could not be loaded
+shot T03_2_api_code
+expect INJECTED FAULT
+expect API code 1
+expectnot Choice 1:
+texts
+tap Back to home
+tap Fault lab
+tap Inject nine results
+expect Armed: nineResults
+back
+waitfor 20 Start round
+tap Start round
+wait Questions could not be loaded
+shot T03_3_nine_results
+expect INJECTED FAULT
+expect received 9
+expectnot Choice 1:
+texts
+waitfor 20 Retry now
+shot T03_4_retry_enabled_after_wait
+tap Retry now
+waitfor 45 Question 1 of 10
+shot T03_5_real_retry_loaded
+logs T03

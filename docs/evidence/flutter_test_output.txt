@@ -1,0 +1,39 @@
+Resolving dependencies...
+Downloading packages...
+  cupertino_icons 1.0.9 (2.0.0 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_math 2.4.0 (2.4.4 available)
+Got dependencies!
+5 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/question_parsing_test.dart
+00:00 +0: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/question_parsing_test.dart: parseRound accepts a valid Class A round returns exactly ten questions with four choices each
+00:00 +1: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: sign-in error is visible and a later sign-in reaches home
+00:00 +2: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/question_parsing_test.dart: parseRound accepts a valid Class A round decodes HTML entities in the question and the answers
+00:00 +3: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: a request error blocks play and offers a retry
+00:00 +4: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/question_parsing_test.dart: parseRound accepts a valid Class A round the choice order is fixed once the round is parsed
+00:00 +5: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: requests are at least five seconds apart
+00:00 +6: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/question_parsing_test.dart: parseRound blocks play on bad data malformed JSON
+00:00 +7: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/question_parsing_test.dart: parseRound blocks play on bad data malformed JSON
+00:00 +8: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: finishing freezes the payload; replay resets everything
+00:00 +9: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: finishing freezes the payload; replay resets everything
+00:00 +10: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/question_parsing_test.dart: parseRound blocks play on bad data nine results
+00:00 +11: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: submit plus a double tap writes one document and verifies it
+00:00 +12: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: submit plus a double tap writes one document and verifies it
+00:00 +13: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: submit plus a double tap writes one document and verifies it
+00:00 +14: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/question_parsing_test.dart: parseRound blocks play on bad data two incorrect answers instead of three
+00:00 +15: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: lost acknowledgement: unknown, then recovered by a server read
+00:00 +16: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/question_parsing_test.dart: parseRound blocks play on bad data empty question or empty choice after decoding
+00:00 +17: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: a UI timeout is unknown, not failed, and does not cancel the save
+00:00 +18: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: a UI timeout is unknown, not failed, and does not cancel the save
+00:00 +19: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: a UI timeout is unknown, not failed, and does not cancel the save
+00:00 +20: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: unknown, server has nothing, operation settled: retry keeps the ID
+00:00 +21: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: denied, unavailable and exhausted are distinct and never loop
+00:00 +22: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: a failed verification read is not a failed save
+00:00 +23: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: same ID with a different score is a collision, original kept
+00:00 +24: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: same ID and same payload reuses the existing document
+00:00 +25: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: a response for the previous user never reaches the new user
+00:00 +26: /Users/sakethsagar/MAD folder/ica16_cloud_quiz/test/quiz_controller_test.dart: sign-out is refused while a submission is unresolved
+00:00 +27: All tests passed!

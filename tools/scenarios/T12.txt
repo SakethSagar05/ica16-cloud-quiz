@@ -1,0 +1,39 @@
+# T12: inject unavailable and resource-exhausted (development-only modelled
+# errors; nothing is sent, so no quota is spent).
+# Expected: distinct visible errors, bounded retry, no fake success.
+clearlogs
+restart
+signin a
+waitfor 20 Start round
+tap Start round
+waitfor 45 Question 1 of 10
+playround
+tap Fault lab
+tap Inject unavailable
+expect Armed: unavailable
+back
+tap Submit score to cloud
+wait Cloud unavailable
+expect INJECTED FAULT
+expectnot Cloud verified
+shot T12_1_unavailable
+texts
+tap Fault lab
+tap Inject resource-exhausted
+expect Armed: resourceExhausted
+back
+tap Retry save
+wait Quota exhausted
+expect INJECTED FAULT
+expectnot Cloud verified
+shot T12_2_resource_exhausted
+texts
+sleep 15
+note 15 seconds later: the app has not retried on its own
+expect Quota exhausted
+expectnot Cloud verified
+tap Retry save
+waitfor 45 Cloud verified
+shot T12_3_real_save_verified
+texts
+logs T12

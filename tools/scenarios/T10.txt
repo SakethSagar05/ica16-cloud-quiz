@@ -1,0 +1,26 @@
+# T10: as user B, read and write user A's path (development-only invalid
+# requests against the deployed rules).
+# Expected: both operations are denied.
+clearlogs
+restart
+signin a
+waitfor 20 Start round
+tap Start round
+waitfor 45 Question 1 of 10
+playround
+tap Submit score to cloud
+waitfor 45 Cloud verified
+shot T10_1_user_a_attempt
+texts
+tap Sign out
+wait Sign in to play
+signin b
+expectuid b
+shot T10_2_signed_in_as_b
+tap Fault lab
+expect T10 target from this session
+tap Run T10 probes
+waitfor 60 T10 write into
+shot T10_3_probe_results
+texts
+logs T10

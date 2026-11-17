@@ -1,0 +1,31 @@
+# T05: finish and replay.
+# Expected: 10 review entries, an accurate total, a new round ID, reset state.
+clearlogs
+restart
+signin a
+waitfor 20 Start round
+tap Start round
+waitfor 45 Question 1 of 10
+note round ID of the first round
+texts
+playround
+wait Final score
+shot T05_1_review_top
+texts
+scroll down
+shot T05_2_review_middle
+texts
+scroll down
+shot T05_3_review_lower
+texts
+scroll down
+shot T05_4_review_end
+texts
+scroll top
+tap Play again
+waitfor 45 Question 1 of 10
+expect Score: 0
+note round ID after replay
+texts
+shot T05_5_replay_new_round
+logs T05

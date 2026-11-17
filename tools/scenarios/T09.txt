@@ -1,0 +1,38 @@
+# T09: suppress the acknowledgement after a real commit (development-only
+# injected fault; the commit and the recovery read are real).
+# Expected: saveUnknown resolves through a server read; still one document.
+clearlogs
+restart
+signin a
+tap My cloud attempts
+wait saved
+note attempts on the server before this round
+texts
+back
+waitfor 20 Start round
+tap Start round
+waitfor 45 Question 1 of 10
+playround
+tap Fault lab
+tap Inject lost acknowledgement
+expect Armed: dropAcknowledgement
+shot T09_1_fault_armed
+back
+tap Submit score to cloud
+waitfor 45 Save status unknown
+expect INJECTED FAULT
+expectnot Cloud verified
+shot T09_2_save_unknown
+texts
+tap Check the cloud
+waitfor 45 Cloud verified
+expect Recovered by a server read
+shot T09_3_recovered
+texts
+tap My cloud attempts
+wait saved
+note attempts on the server after recovery
+texts
+shot T09_4_attempts_after
+back
+logs T09

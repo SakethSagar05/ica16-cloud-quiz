@@ -1,0 +1,40 @@
+# T08: go offline before submit, then reconnect.
+# Expected: no false success; reconcile and recover with the same round ID.
+clearlogs
+restart
+signin a
+waitfor 20 Start round
+tap Start round
+waitfor 45 Question 1 of 10
+playround
+note round ID before going offline
+texts
+net off
+sleep 4
+tap Submit score to cloud
+waitany 75 Cloud unavailable|Save status unknown
+shot T08_1_offline_result
+expectnot Cloud verified
+texts
+tapif Check the cloud
+sleep 13
+shot T08_2_offline_check
+expectnot Cloud verified
+texts
+net on
+sleep 14
+tapif Check the cloud
+sleep 8
+tapif Check the cloud
+sleep 8
+tapif Check the cloud
+sleep 6
+shot T08_3_after_reconnect
+texts
+tapif Retry save
+tapif Submit score to cloud
+waitfor 75 Cloud verified
+note same round ID after recovery
+shot T08_4_recovered
+texts
+logs T08

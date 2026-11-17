@@ -1,0 +1,8 @@
+checked_at_utc: 2026-11-17T01:52:27.920037+00:00
+url: https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple
+response_code: 0
+results: 10
+categories: ['General Knowledge']
+difficulties: ['easy']
+types: ['multiple']
+incorrect_answers per question: [3]

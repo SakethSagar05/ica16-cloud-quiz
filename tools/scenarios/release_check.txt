@@ -1,0 +1,15 @@
+# Install test of the submission APK (release build, no fault lab).
+clearlogs
+install release
+restart
+signin a
+expectnot Fault lab
+shot RELEASE_1_home
+tap Start round
+waitfor 45 Question 1 of 10
+playround
+tap Submit score to cloud
+waitfor 45 Cloud verified
+shot RELEASE_2_cloud_verified
+texts
+logs RELEASE

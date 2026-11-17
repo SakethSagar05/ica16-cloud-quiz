@@ -1,0 +1,27 @@
+# T01: valid and invalid sign-in.
+# Expected: a visible authentication error for a wrong password, the correct
+# UID after the right one, and no secret in any log.
+clearlogs
+restart
+waitany 45 Sign in to play|Sign out
+tapif Sign out
+wait Sign in to play
+shot T01_1_signed_out
+field Email|0
+cred a-email
+field Password|1
+cred bad-password
+hidekb
+tap Sign in
+wait Sign-in failed
+expect Email or password is incorrect
+expectnot Start round
+shot T01_2_invalid_sign_in
+field Password|1
+cred a-password
+hidekb
+tap Sign in
+waitfor 45 Start round
+expectuid a
+shot T01_3_signed_in
+logs T01
